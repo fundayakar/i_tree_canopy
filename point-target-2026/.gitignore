@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.work/
+run_output/
+itree_climate_similarity_POINT_TARGET_1991_2020.zip
+data/*.gpkg
+
