@@ -1,0 +1,5 @@
+Sample_Order,Point_ID,Latitude,Longitude,Original_Class,Repeat_Class
+75,8215,39.827139577841,32.848891366127,Soil/Bare Ground,Grass/Steppe/Herbaceous
+112,10142,39.815904474527,32.816286467572,Soil/Bare Ground,Grass/Steppe/Herbaceous
+225,7908,39.831979216013,32.844014089869,Tree/Shrub,Grass/Steppe/Herbaceous
+371,17585,39.827184780279,32.842064528941,Grass/Steppe/Herbaceous,Soil/Bare Ground

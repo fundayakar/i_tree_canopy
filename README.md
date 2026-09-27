@@ -33,6 +33,10 @@ by +40.03%. The climate scripts do not reproduce i-Tree's server-side service
 coefficients. The original Canyon and Ada reports remain to be archived with
 the current revision.
 
+## Blind repeat-classification audit
+
+The [500-point blind repeat-classification audit](repeat-audit-2026/README.md) includes the original-label key, completed repeat labels, sampling and agreement scripts, and the reported agreement tables.
+
 ## Historical material
 
 Other directories at the repository root contain earlier exploratory proxy,

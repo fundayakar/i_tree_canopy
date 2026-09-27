@@ -1,0 +1,18 @@
+Metric,Value
+n,500
+Exact agreements,496
+Exact disagreements,4
+Overall percent agreement,99.2
+Overall agreement 95% CI lower,97.96129641658948
+Overall agreement 95% CI upper,99.68846848199378
+Multiclass Cohen's kappa,0.9820056502258291
+Tree/Shrub original count,354
+Tree/Shrub repeat count,353
+Tree/Shrub original proportion (%),70.8
+Tree/Shrub repeat proportion (%),70.6
+"Tree/Shrub proportion difference (repeat-original, percentage points)",-0.2
+Tree vs non-tree agreements,499
+Tree vs non-tree percent agreement,99.8
+Tree vs non-tree agreement 95% CI lower,98.87592932948533
+Tree vs non-tree agreement 95% CI upper,99.96468636054408
+Tree vs non-tree Cohen's kappa,0.995172626863366
