@@ -84,12 +84,33 @@ The `environment.txt` from a new run records the versions used in that run.
 | --- | --- |
 | `scripts/recompute_climate.py` | Full WorldClim extraction and ranking, with configurable paths. |
 | `scripts/verify_results.py` | Quick independent calculation from saved monthly CSVs. |
+| `scripts/recompute_carbon_comparison.py` | Recomputes per-hectare carbon values and the equivalent stem-volume increment from report outputs and published factors. |
 | `data/Eymir_iTree_project_points_20255.csv.gz` | Compressed CSV of all original i-Tree project locations; five unlabeled cover records retained. |
 | `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; distributed separately because of its size. |
 | `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` | Eleven CSVs, including monthly values, raw features, reference scaling, full ranking, point extraction QA, raster-cell weights, and source manifest. |
 
 The results ZIP is the unchanged output of the completed Colab run. Extract it
 to inspect individual CSVs. The fast verifier reads the ZIP directly.
+
+## Carbon comparison calculation
+
+`scripts/recompute_carbon_comparison.py` reproduces the manuscript's per-hectare
+Tree/Shrub carbon values and approximate equivalent stem-volume increment:
+
+```bash
+python scripts/recompute_carbon_comparison.py
+```
+
+It uses the Canyon i-Tree report's rounded annual sequestration total
+(257.69 t C yr⁻¹) and Tree/Shrub area coefficient (190.000 t C km⁻² yr⁻¹)
+to infer approximately 135.6 ha of Tree/Shrub cover. It then divides the
+reported carbon totals by this area. The equivalent volume calculation divides
+1.90 t C ha⁻¹ yr⁻¹ by the product of wood density (0.408 t m⁻³), aboveground
+biomass expansion (1.516), root-to-shoot adjustment (1 + 0.179), and carbon
+fraction (0.5386), yielding approximately 4.84 m³ ha⁻¹ yr⁻¹. The published
+conversion factors are from Güner and Çömez (2017). The inferred area is
+derived from the report's rounded numbers, not an independent GIS measurement;
+this calculation is a contextual comparison, not a new field estimate.
 
 ## Interpretation boundary
 
