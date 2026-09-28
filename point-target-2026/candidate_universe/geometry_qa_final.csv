@@ -1,0 +1,13 @@
+metric,value
+registry_eligible_candidates,3707.0
+spatially_resolved_final,3689.0
+unresolved_final,18.0
+final_resolution_rate_pct,99.51443215538171
+duplicate_candidate_ids,0.0
+exact_duplicate_geometry_rows_wkb,0.0
+invalid_geometries_before_repair,9.0
+invalid_geometries_after_repair,0.0
+empty_geometries,0.0
+korea_candidates,229.0
+korea_unique_source_units,229.0
+korea_duplicate_source_assignments,0.0

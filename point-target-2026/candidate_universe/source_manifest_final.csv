@@ -1,0 +1,14 @@
+source,url,rows
+Census TIGER/Line 2024 County,https://www2.census.gov/geo/tiger/TIGER2024/COUNTY/tl_2024_us_county.zip,3235
+Census TIGER/Line 2010 County,https://www2.census.gov/geo/tiger/TIGER2010/COUNTY/2010/tl_2010_us_county10.zip,3221
+Census TIGER/Line 2024 VI COUSUB,https://www2.census.gov/geo/tiger/TIGER2024/COUSUB/tl_2024_78_cousub.zip,23
+Census 2000 Alaska county cartographic boundary,https://www2.census.gov/geo/tiger/PREVGENZ/co/co00shp/co02_d00_shp.zip,113
+geoBoundaries SWE ADM1 pinned 9469f09,https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SWE/ADM1/geoBoundaries-SWE-ADM1.geojson,21
+geoBoundaries NZL ADM2 pinned 9469f09,https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NZL/ADM2/geoBoundaries-NZL-ADM2.geojson,88
+geoBoundaries NZL ADM1 pinned 9469f09,https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NZL/ADM1/geoBoundaries-NZL-ADM1.geojson,17
+Bay of Plenty Regional Council / Statistics NZ Territorial Authority Boundaries,https://gis.boprc.govt.nz/server2/rest/services/BayOfPlentyMaps/Boundaries/MapServer/51,44
+geoBoundaries KOR ADM1 pinned 9469f09 (intermediate anchor only),https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KOR/ADM1/geoBoundaries-KOR-ADM1.geojson,17
+geoBoundaries KOR ADM2 pinned 9469f09 (intermediate anchor only),https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KOR/ADM2/geoBoundaries-KOR-ADM2.geojson,228
+Statistics Korea SGIS 2020 administrative boundaries,https://github.com/statgarten/maps/tree/d5f8ea3208f19a73a01f865847d20cc195ae91ba/json,250
+HDX/OCHA Ukraine ADM2,https://data.humdata.org/dataset/d23f529f-31e4-4021-a65b-13987e5cfb42/resource/2b38131d-5dd6-4b0f-b4c6-4aecc67f179d/download/ukr_admin_boundaries.shp.zip,139
+Kyiv City official district FeatureServer,https://gisserver-stage.kyivcity.gov.ua/mayno/rest/services/adge/Dilnyci/FeatureServer/2,10

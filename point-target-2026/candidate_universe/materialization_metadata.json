@@ -1,0 +1,8 @@
+{
+  "registry_eligible": 3707,
+  "final_spatial_universe": 3689,
+  "unresolved_uk_custom_partitions": 18,
+  "geoBoundaries_commit": "9469f09",
+  "sgis_static_mirror_commit": "d5f8ea3208f19a73a01f865847d20cc195ae91ba",
+  "eligibility_rule": "Retain configurations that can be unambiguously linked to a reproducible machine-readable polygon; do not approximate unresolved i-Tree-specific partitions."
+}
