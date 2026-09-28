@@ -48,16 +48,6 @@ i-Tree locations.
 python eo-comparison-2026/scripts/verify_results.py
 ```
 
-## Historical material
-
-Other directories at the repository root contain earlier exploratory proxy,
-remote-sensing, polygon-reconstruction, and correlation analyses. Some use a
-nine-city comparison or a reconstructed 187.5-ha polygon. **Those files and the
-older `Outputs/` tables are not the source of the current Canyon–Ada climate
-ranking or the approximately 1.90-km² i-Tree project area.** They are retained
-to preserve the development history and should not be mixed with the current
-analysis.
-
 ## License and contact
 
 Code is available under the repository's [MIT License](LICENSE). For questions:
