@@ -30,12 +30,23 @@ The i-Tree service comparison holds Tree/Shrub cover fixed and changes only the
 regional configuration. Carbon storage and annual sequestration are unchanged
 between Canyon and Ada; pollutant removal differs by −2.28% and avoided runoff
 by +40.03%. The climate scripts do not reproduce i-Tree's server-side service
-coefficients. The original Canyon and Ada reports remain to be archived with
-the current revision.
+coefficients. The original [Canyon](itreecnpy_project_files/canyon.pdf) and
+[Ada](itreecnpy_project_files/Ada.pdf) reports are archived in this repository.
 
 ## Blind repeat-classification audit
 
 The [500-point blind repeat-classification audit](repeat-audit-2026/README.md) includes the original-label key, completed repeat labels, sampling and agreement scripts, and the reported agreement tables.
+
+## Earth-observation contextual comparison
+
+The [EO comparison package](eo-comparison-2026/README.md) contains the Earth Engine
+JavaScript workflow, four archived CSV exports, and a Python verifier for the
+Sentinel-2 NDVI, WorldCover and Dynamic World comparisons at the 20,250 classified
+i-Tree locations.
+
+```bash
+python eo-comparison-2026/scripts/verify_results.py
+```
 
 ## Historical material
 
