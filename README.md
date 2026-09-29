@@ -22,7 +22,7 @@ python point-target-2026/scripts/verify_results.py
 ```
 
 The full raster and polygon extraction requires the 187,916,288-byte
-[`iTree_candidate_polygons_final.gpkg`](https://zenodo.org/records/23044379), archived separately on
+[`iTree_candidate_polygons_final.gpkg`](https://doi.org/10.5281/zenodo.23044379), archived separately on
 Zenodo (version DOI: `10.5281/zenodo.23044379`). Its verified SHA-256 is
 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. See the [full reproducibility instructions](point-target-2026/README.md).
 
