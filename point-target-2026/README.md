@@ -40,7 +40,7 @@ extractions used 20,255 valid coordinates. No candidate has a missing feature.
 
 ## Full extraction from WorldClim
 
-1. Download the **intact** [`iTree_candidate_polygons_final.gpkg`](https://zenodo.org/records/23044379)
+1. Download the **intact** [`iTree_candidate_polygons_final.gpkg`](https://doi.org/10.5281/zenodo.23044379)
    (version DOI: `10.5281/zenodo.23044379`) and place it in this directory's
    `data/`. It has 187,916,288 bytes and SHA-256
    `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. See [`data/README.md`](data/README.md) for details.
@@ -85,7 +85,7 @@ The `environment.txt` from a new run records the versions used in that run.
 | `scripts/verify_results.py` | Quick independent calculation from saved monthly CSVs. |
 | `scripts/recompute_carbon_comparison.py` | Recomputes per-hectare carbon values and the equivalent stem-volume increment from report outputs and published factors. |
 | `data/Eymir_iTree_project_points_20255.csv.gz` | Compressed CSV of all original i-Tree project locations; five unlabeled cover records retained. |
-| `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; [archived separately on Zenodo](https://zenodo.org/records/23044379) because of its size. |
+| `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; [archived separately on Zenodo](https://doi.org/10.5281/zenodo.23044379) because of its size. |
 | `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` | Eleven CSVs, including monthly values, raw features, reference scaling, full ranking, point extraction QA, raster-cell weights, and source manifest. |
 
 The results ZIP is the unchanged output of the completed Colab run. Extract it
