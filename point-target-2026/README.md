@@ -40,11 +40,10 @@ extractions used 20,255 valid coordinates. No candidate has a missing feature.
 
 ## Full extraction from WorldClim
 
-1. Obtain the **intact** `iTree_candidate_polygons_final.gpkg` described in
-   [`data/README.md`](data/README.md), and place it in this directory's `data/`. The observed
-   source copy was 187,916,288 bytes, passed SQLite `PRAGMA quick_check`, and
-   contained 3,689 records. A 75.5 MB truncated copy is corrupt and must not
-   be used.
+1. Download the **intact** [`iTree_candidate_polygons_final.gpkg`](https://zenodo.org/records/23044379)
+   (version DOI: `10.5281/zenodo.23044379`) and place it in this directory's
+   `data/`. It has 187,916,288 bytes and SHA-256
+   `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. See [`data/README.md`](data/README.md) for details.
 2. Use Python with GDAL support and install the dependencies:
 
    ```bash
@@ -65,8 +64,8 @@ The script downloads the 12 WorldClim historical monthly ZIP archives for
 `tmin`, `tmax`, and `prec`, across the 1990–1999, 2000–2009, 2010–2019, and
 2020–2024 archive partitions. It uses **January 1991–December 2020** only,
 at **10 arc-minute** resolution, from CRU-TS 4.09 downscaled with WorldClim 2.1
-bias correction. Its source base URL is recorded in the code and
-`results/worldclim_source_manifest.csv`. Expect a large download, global raster
+bias correction. Its source base URL is recorded in the code and the results ZIP's
+`worldclim_source_manifest.csv`. Expect a large download, global raster
 processing, and several gigabytes of temporary disk use. Cached downloads and
 monthly rasters go to `.work/`; fresh CSVs go to `run_output/` and a ZIP beside
 that directory. The program writes SHA-256 hashes of the two local inputs to
@@ -86,7 +85,7 @@ The `environment.txt` from a new run records the versions used in that run.
 | `scripts/verify_results.py` | Quick independent calculation from saved monthly CSVs. |
 | `scripts/recompute_carbon_comparison.py` | Recomputes per-hectare carbon values and the equivalent stem-volume increment from report outputs and published factors. |
 | `data/Eymir_iTree_project_points_20255.csv.gz` | Compressed CSV of all original i-Tree project locations; five unlabeled cover records retained. |
-| `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; distributed separately because of its size. |
+| `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; [archived separately on Zenodo](https://zenodo.org/records/23044379) because of its size. |
 | `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` | Eleven CSVs, including monthly values, raw features, reference scaling, full ranking, point extraction QA, raster-cell weights, and source manifest. |
 
 The results ZIP is the unchanged output of the completed Colab run. Extract it
@@ -123,14 +122,12 @@ validate the i-Tree service coefficients. The Canyon–Ada output comparison is
 local sensitivity to the nearest ranked alternative, not a complete range of
 configuration uncertainty.
 
-## Before public release
+## Candidate provenance and service reports
 
-- Archive the intact 187,916,288-byte GPKG with a stable DOI and record its
-  SHA-256 in `data/README.md`. No DOI or checksum has been invented here.
-- Preserve the raw regional-configuration inventory, geometry matching rules,
-  and exclusion record that generated the final 3,689-polygon GPKG if available.
-- Add the original Canyon and Ada i-Tree reports and the script/table used to
-  transcribe their service outputs. The present ZIP verifies climate selection,
-  not i-Tree's server-side service calculations.
-- Add the producing Colab environment's package versions if it is still
-  available; otherwise report the new rerun's recorded environment.
+The [`candidate_universe/`](candidate_universe/) directory archives the eligible
+configuration registry, geometry crosswalk, source manifest, QA, and the 18
+unresolved candidates excluded from the spatial analysis. The original
+[Canyon](../itreecnpy_project_files/canyon.pdf) and
+[Ada](../itreecnpy_project_files/Ada.pdf) i-Tree reports are also archived.
+The climate verifier reconstructs the ranking; i-Tree's server-side service
+coefficients are documented in those reports.
