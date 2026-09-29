@@ -14,10 +14,12 @@ these fields: `Candidate_ID`, `Dataset`, `Parent_region`, `iTree_label`,
 `Normalized_name`, `Stable_geometry_key`, `source_layer`, `source_feature_id`,
 `source_name`, `match_status`, `note`, and `area_km2_qa`.
 
-This GPKG is **not included** in the current package. Its DOI and SHA-256
-remain to be supplied from the intact copy. The 75.5 MB copy that produced
-`database disk image is malformed` is not a valid substitute. Place the intact
-GPKG here under its exact filename, or pass `--geometry` to the full script.
+The GPKG is [archived separately on Zenodo](https://zenodo.org/records/23044379) (version DOI:
+`10.5281/zenodo.23044379`). Its SHA-256 is
+`1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`; this matched the original local file and the bytes downloaded from
+Zenodo. The 75.5 MB copy that produced `database disk image is malformed` is
+not a valid substitute. Place the intact GPKG here under its exact filename,
+or pass `--geometry` to the full script.
 
 WorldClim inputs are downloaded by `scripts/recompute_climate.py`; see the root
 README for the precise product, archive partitions, period, and resolution.
