@@ -14,7 +14,7 @@ these fields: `Candidate_ID`, `Dataset`, `Parent_region`, `iTree_label`,
 `Normalized_name`, `Stable_geometry_key`, `source_layer`, `source_feature_id`,
 `source_name`, `match_status`, `note`, and `area_km2_qa`.
 
-The GPKG is [archived separately on Zenodo](https://zenodo.org/records/23044379) (version DOI:
+The GPKG is [archived separately on Zenodo](https://doi.org/10.5281/zenodo.23044379) (version DOI:
 `10.5281/zenodo.23044379`). Its SHA-256 is
 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`; this matched the original local file and the bytes downloaded from
 Zenodo. The 75.5 MB copy that produced `database disk image is malformed` is
