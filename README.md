@@ -1,10 +1,5 @@
 # Lake Eymir i-Tree Canopy analysis
 
-Research repository for Funda Yakar's iForest manuscript, currently titled
-*Climate-based proxy selection for i-Tree Canopy in data-scarce regions:
-sensitivity and plausibility assessment at Lake Eymir, Türkiye* (revision in
-progress).
-
 ## Current climate-proxy analysis
 
 The reproducible **1991–2020 point-target analysis** is in
