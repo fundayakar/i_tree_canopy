@@ -41,13 +41,11 @@ The core climate verifier checks all five descriptors, candidate-only standardiz
 
 ## Data availability
 
-The original i-Tree project export, candidate inventory, extracted monthly climate values, derived descriptors, scaling parameters, ranking tables, scenario results and executable scripts are publicly available here.
+The original i-Tree Canopy project, candidate inventory, monthly climate summaries, derived descriptors, scaling parameters, ranking outputs, sensitivity results and analysis scripts are available in this repository.
 
-The **full candidate polygon GeoPackage** (3,689 polygons) is not hosted in this repository. The corresponding author intends to provide a verified copy upon reasonable request **once the original file has been recovered and checked**. Its expected size is 187,916,288 bytes and SHA-256 is `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. The archived climate tables and ranking can be independently checked without the GeoPackage; rerunning the global raster extraction requires it. A previously cited Zenodo geometry record is not treated as an active download source.
+The complete 3,689-polygon GeoPackage needed to rerun the original global raster extraction is not hosted on GitHub and is available from the corresponding author upon reasonable request. The archived climate tables and ranking calculations can be verified without it.
 
-The numerical five-proxy comparison is archived in CSV. The Walla Walla, Lincoln and Adams source PDFs are **pending binary-file deposit**; until then, the corresponding original reports are available from the author upon request. The optional PDF extraction verifier needs all five source reports. Missing Lincoln air-pollution and hydrological values are coded as unavailable, not as zero benefit.
-
-No new Zenodo record is being created at this stage.
+The Canyon and Ada source reports are included. The five-proxy numerical comparison is archived as CSV; the Walla Walla, Lincoln and Adams source PDFs are not hosted here. Missing Lincoln pollutant and hydrological values are treated as unavailable rather than zero.
 
 ## License and contact
 
