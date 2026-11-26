@@ -60,7 +60,7 @@ The ranking-robustness scenarios are sensitivity checks, not measures of statist
 
 ## Ecosystem-service configuration comparison
 
-The original Canyon and Ada i-Tree reports are archived in `../itreecnpy_project_files/`. Under unchanged Tree/Shrub cover, annual carbon sequestration is 257.69 t C/yr in both, air-pollutant removal changes from 10,328.40 to 10,093.16 kg/yr, and avoided runoff changes from 11.84 to 16.58 ML/yr.
+All five original i-Tree reports are archived in `../itreecnpy_project_files/`. Under unchanged Tree/Shrub cover, annual carbon sequestration is 257.69 t C/yr in both, air-pollutant removal changes from 10,328.40 to 10,093.16 kg/yr, and avoided runoff changes from 11.84 to 16.58 ML/yr.
 
 The [five-proxy comparison](results/itree_top5_service_comparison.csv) additionally covers Walla Walla, Lincoln and Adams counties. Carbon storage stays at 10,422.69 t C throughout the five reports; annual sequestration is 366.19 t C/yr for the latter three. The Lincoln report lacks usable pollutant and hydrological component coefficients; its apparent zero values are treated as **N/A**.
 
@@ -68,13 +68,13 @@ The [five-proxy comparison](results/itree_top5_service_comparison.csv) additiona
 python point-target-2026/scripts/verify_top5_services.py
 ```
 
-The numeric check is reproducible from the archived CSV. To **reextract the five original PDF report values**, place the Walla Walla, Lincoln and Adams reports locally under `itreecnpy_project_files/` as `WallaWalla.pdf`, `Lincoln.pdf` and `Adams.pdf`, install Poppler's `pdftotext` and run:
+The numeric check is reproducible from the archived CSV. All five source PDFs are already included in `itreecnpy_project_files/`. To **reextract and verify their original report values**, install Poppler's `pdftotext` and run:
 
 ```bash
 python point-target-2026/scripts/extract_top5_services.py
 ```
 
-The CSV comparison and its arithmetic are publicly verifiable. Rechecking the three additional report transcriptions against the source PDFs requires obtaining those reports separately.
+The CSV comparison and its arithmetic can be checked directly, and the PDF extraction script provides an independent cross-check against all five archived source reports.
 
 ## Files and provenance
 
