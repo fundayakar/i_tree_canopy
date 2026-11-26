@@ -36,7 +36,7 @@ python point-target-2026/scripts/recompute_climate.py
 
 The full script downloads historical monthly WorldClim archives, builds the 1991–2020 monthly climatologies, extracts candidates and target values, and writes intermediate QA tables. It uses GDAL, rasterio and exactextract and needs substantial disk space. The last full Colab run took place on 27 September 2026. The environment requirements are listed without falsely asserting that the original run's exact package versions were pinned.
 
-**GeoPackage availability:** the full 3,689-polygon input is not stored in GitHub. The corresponding author intends to supply it upon reasonable request after a verified original copy is recovered. Expected size **187,916,288 bytes**; SHA-256 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. The earlier Zenodo DOI is not an active distribution link. See [data provenance](data/README.md).
+**GeoPackage availability:** the complete 3,689-polygon input is not hosted on GitHub and is available from the corresponding author upon reasonable request. The original verified file had size **187,916,288 bytes** and SHA-256 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`; check a supplied copy before use. See [data provenance](data/README.md).
 
 ## Ranking robustness (current manuscript Figure 1)
 
@@ -68,13 +68,13 @@ The [five-proxy comparison](results/itree_top5_service_comparison.csv) additiona
 python point-target-2026/scripts/verify_top5_services.py
 ```
 
-The numeric check is reproducible from the archived CSV. To **reextract original five-PDF report values**, after the three pending source PDFs have been deposited or placed locally under `itreecnpy_project_files/` with names `WallaWalla.pdf`, `Lincoln.pdf` and `Adams.pdf`, install Poppler's `pdftotext` and run:
+The numeric check is reproducible from the archived CSV. To **reextract the five original PDF report values**, place the Walla Walla, Lincoln and Adams reports locally under `itreecnpy_project_files/` as `WallaWalla.pdf`, `Lincoln.pdf` and `Adams.pdf`, install Poppler's `pdftotext` and run:
 
 ```bash
 python point-target-2026/scripts/extract_top5_services.py
 ```
 
-Until the missing PDFs are deposited, the CSV comparison is publicly inspectable but the three additional report transcriptions cannot be independently re-extracted from GitHub alone.
+The CSV comparison and its arithmetic are publicly verifiable. Rechecking the three additional report transcriptions against the source PDFs requires obtaining those reports separately.
 
 ## Files and provenance
 
