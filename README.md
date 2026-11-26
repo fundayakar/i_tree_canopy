@@ -20,7 +20,7 @@ These are **rank- and configuration-sensitivity** analyses; rankings alone are n
 | [point-target-2026/](point-target-2026/README.md) | Current 1991–2020 climate analysis, scripts, archived results, robustness and five-proxy comparison |
 | [point-target-2026/candidate_universe/](point-target-2026/candidate_universe/) | Original candidate registry, crosswalk, boundary-source manifests and exclusion audit |
 | [point-target-2026/figures/ranking_robustness.svg](point-target-2026/figures/ranking_robustness.svg) | Current manuscript Figure 1 (rank robustness) |
-| [itreecnpy_project_files/](itreecnpy_project_files/) | Original i-Tree project plus Canyon and Ada PDF service reports |
+| [itreecnpy_project_files/](itreecnpy_project_files/) | Original i-Tree project plus all five PDF service reports |
 | [eo-comparison-2026/](eo-comparison-2026/README.md) | **Archived exploratory EO analysis**, not part of the current manuscript |
 
 The former point-map figure has been superseded by the ranking-robustness figure. An older carbon-plausibility script is retained in the point-target scripts directory for historical provenance, not used to support the present manuscript.
@@ -45,7 +45,7 @@ The original i-Tree Canopy project, candidate inventory, monthly climate summari
 
 The complete 3,689-polygon GeoPackage needed to rerun the original global raster extraction is not hosted on GitHub and is available from the corresponding author upon reasonable request. The archived climate tables and ranking calculations can be verified without it.
 
-The Canyon and Ada source reports are included. The five-proxy numerical comparison is archived as CSV; the Walla Walla, Lincoln and Adams source PDFs are not hosted here. Missing Lincoln pollutant and hydrological values are treated as unavailable rather than zero.
+All five original i-Tree service-report PDFs and the five-proxy numerical comparison CSV are included. Missing Lincoln pollutant and hydrological values are treated as unavailable rather than zero.
 
 ## License and contact
 
