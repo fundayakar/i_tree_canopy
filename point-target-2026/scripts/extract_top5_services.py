@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Optional source-PDF extraction and cross-check for five i-Tree reports.
 
-Requires Poppler's pdftotext executable and all five original PDF reports.
-Three reports are not yet hosted in this repository; see README.
+Requires Poppler's pdftotext executable. All five original PDF reports
+are archived in the repository's itreecnpy_project_files/ directory.
 No incomplete input is silently interpreted as a zero ecosystem service.
 """
 from pathlib import Path
