@@ -2,7 +2,7 @@
 
 - `i-tree canopy project file.itrcnpy`: original Lake Eymir i-Tree Canopy project.
 - `canyon.pdf` and `Ada.pdf`: original reports for the two primary climate-ranked configurations.
-- Walla Walla, Lincoln and Adams original reports: **not hosted in this directory**. Their extracted service totals are documented in the five-proxy comparison CSV.
+- `WallaWalla.pdf`, `Lincoln.pdf` and `Adams.pdf`: original reports for the three additional configurations in the five-proxy comparison.
 
 The publicly available `../point-target-2026/results/itree_top5_service_comparison.csv` contains the extracted biophysical totals and Canyon-relative percentage differences. Its arithmetic and the missing-value treatment of Lincoln can be checked with `../point-target-2026/scripts/verify_top5_services.py`.
 
