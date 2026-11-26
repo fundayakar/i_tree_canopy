@@ -12,7 +12,7 @@ The original verified file had **187,916,288 bytes**, passed SQLite `PRAGMA quic
 
 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`
 
-**Current availability:** the GeoPackage is not hosted in this repository. The corresponding author intends to provide an independently checked copy upon reasonable request after recovering the original file. Do not assume the previously cited Zenodo record provides an active download; that link was removed from the instructions. A 75.5 MB truncated/corrupted copy from an earlier attempt is **not** a substitute.
+**Availability:** the GeoPackage is available from the corresponding author upon reasonable request but is not hosted on GitHub. The archived monthly climate values, descriptors, ranking and sensitivity calculations are independently verifiable without it.
 
 Once a verified GeoPackage is obtained, place it here as `iTree_candidate_polygons_final.gpkg` or supply its location with `--geometry` to `scripts/recompute_climate.py`. Until then, the archived monthly values, features, ranking and sensitivity calculations remain independently verifiable without this geometry.
 
