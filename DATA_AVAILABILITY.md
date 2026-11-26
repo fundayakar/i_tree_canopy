@@ -2,10 +2,8 @@
 
 **Repository:** https://github.com/fundayakar/i_tree_canopy
 
-The i-Tree Canopy project export and classified sample, configuration inventory and boundary-source crosswalk, the extracted 1991–2020 climate summaries, five-descriptor rankings, ranking-robustness results, service-comparison data and analysis scripts are hosted in this repository.
+The original i-Tree Canopy project and classified sample, candidate inventory and boundary-source crosswalk, 1991–2020 climate summaries, five-descriptor rankings, ranking-robustness results, service-comparison data and analysis scripts are available in this repository.
 
-The complete 3,689-candidate GeoPackage is **not currently distributed** via GitHub or an active Zenodo download. A verified copy is intended to be made available by the corresponding author upon reasonable request **once the original file has been recovered and verified**. The archived descriptor and ranking results can be independently checked without it; a full rerun of the original global raster extraction requires the file. The anticipated SHA-256 is `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`.
+The complete 3,689-candidate GeoPackage is available from the corresponding author upon reasonable request but is not hosted here. It is required to repeat the global raster extraction; the archived climate descriptors and ranking results can be independently verified from the supplied data and scripts.
 
-The Canyon and Ada i-Tree service reports and original project file are public in `itreecnpy_project_files/`. The additional Walla Walla, Lincoln and Adams original PDF reports were inspected for the five-proxy comparison but are **not yet deposited in GitHub**. Their numerical summary and verification script are archived; the underlying PDFs can be supplied by the corresponding author on request pending binary deposit.
-
-No new Zenodo deposit has been made for this manuscript stage. This statement should be revisited before publication to confirm that files promised on request can actually be supplied.
+The original Canyon and Ada service-report PDFs are included in `itreecnpy_project_files/`. Numerical results for all five proxy configurations are archived in CSV. The Walla Walla, Lincoln and Adams source PDFs are not hosted in this repository; checking the original PDF-to-CSV extraction requires those additional reports. Missing Lincoln pollutant and hydrological values are coded as unavailable.
