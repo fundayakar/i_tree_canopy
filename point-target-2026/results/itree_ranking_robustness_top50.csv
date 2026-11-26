@@ -1,0 +1,601 @@
+scenario,rank,Candidate_ID,region,distance
+Baseline: all five,1,ITC-0568,"Canyon, Idaho",0.42211545834531955
+Baseline: all five,2,ITC-0555,"Ada, Idaho",0.43422116418417495
+Baseline: all five,3,ITC-3074,"Walla Walla, Washington",0.4705439513705737
+Baseline: all five,4,ITC-3060,"Lincoln, Washington",0.5059158278620418
+Baseline: all five,5,ITC-3039,"Adams, Washington",0.5288208273638098
+Baseline: all five,6,ITC-3076,"Whitman, Washington",0.538551706322888
+Baseline: all five,7,ITC-0577,"Gem, Idaho",0.5570347444263796
+Baseline: all five,8,ITC-0592,"Payette, Idaho",0.5779248362975424
+Baseline: all five,9,ITC-0581,"Jerome, Idaho",0.5886296847163865
+Baseline: all five,10,ITC-3049,"Franklin, Washington",0.5956557187145344
+Baseline: all five,11,ITC-1759,"Lander, Nevada",0.6022361869006249
+Baseline: all five,12,ITC-0578,"Gooding, Idaho",0.6253968943222487
+Baseline: all five,13,ITC-3050,"Garfield, Washington",0.642524351691033
+Baseline: all five,14,ITC-2864,"Davis, Utah",0.6434268022358962
+Baseline: all five,15,ITC-1764,"Pershing, Nevada",0.6443253399888509
+Baseline: all five,16,ITC-3070,"Spokane, Washington",0.6565776568095119
+Baseline: all five,17,ITC-1758,"Humboldt, Nevada",0.6638427958714775
+Baseline: all five,18,ITC-3041,"Benton, Washington",0.6749009423483607
+Baseline: all five,19,ITC-2222,"Gilliam, Oregon",0.6757760503891875
+Baseline: all five,20,ITC-2236,"Morrow, Oregon",0.6851183697788714
+Baseline: all five,21,ITC-1761,"Lyon, Nevada",0.6887235637209074
+Baseline: all five,22,ITC-0591,"Owyhee, Idaho",0.7227715578691413
+Baseline: all five,23,ITC-0596,"Twin Falls, Idaho",0.723274009276527
+Baseline: all five,24,ITC-3047,"Douglas, Washington",0.7256395705710079
+Baseline: all five,25,ITC-2234,"Malheur, Oregon",0.7267400976662225
+Baseline: all five,26,ITC-0598,"Washington, Idaho",0.7273989459335078
+Baseline: all five,27,ITC-3040,"Asotin, Washington",0.7338072282712467
+Baseline: all five,28,ITC-3051,"Grant, Washington",0.7573982548917167
+Baseline: all five,29,ITC-0589,"Nez Perce, Idaho",0.7677123434840935
+Baseline: all five,30,ITC-3045,"Columbia, Washington",0.7686085993424767
+Baseline: all five,31,ITC-2241,"Umatilla, Oregon",0.7760224110355233
+Baseline: all five,32,ITC-2876,"Salt Lake, Utah",0.7823521668172175
+Baseline: all five,33,ITC-0588,"Minidoka, Idaho",0.7901628810855849
+Baseline: all five,34,ITC-2885,"Washington, Utah",0.7915250408131402
+Baseline: all five,35,ITC-1752,"Churchill, Nevada",0.8312886102068681
+Baseline: all five,36,ITC-1757,"Eureka, Nevada",0.8404816577282364
+Baseline: all five,37,ITC-0586,"Lincoln, Idaho",0.8408211683862917
+Baseline: all five,38,ITC-1766,"Washoe, Nevada",0.8648720857959403
+Baseline: all five,39,ITC-3071,"Stevens, Washington",0.8877842353498158
+Baseline: all five,40,ITC-1755,"Elko, Nevada",0.9079932499662408
+Baseline: all five,41,ITC-0570,"Cassia, Idaho",0.9115301426614505
+Baseline: all five,42,ITC-2224,"Harney, Oregon",0.9167767057010908
+Baseline: all five,43,ITC-2239,"Sherman, Oregon",0.9182693186434245
+Baseline: all five,44,ITC-1762,"Mineral, Nevada",0.9450569342425303
+Baseline: all five,45,ITC-2887,"Weber, Utah",0.956304171837563
+Baseline: all five,46,ITC-2212,"Baker, Oregon",0.9724810010682714
+Baseline: all five,47,ITC-0574,"Elmore, Idaho",1.000033070613622
+Baseline: all five,48,ITC-1765,"Storey, Nevada",1.0185283644926453
+Baseline: all five,49,ITC-2230,"Lake, Oregon",1.0576991547103725
+Baseline: all five,50,ITC-0593,"Power, Idaho",1.0820789168124585
+Without MAT,1,ITC-3060,"Lincoln, Washington",0.2596196947203799
+Without MAT,2,ITC-0561,"Blaine, Idaho",0.3131015382163642
+Without MAT,3,ITC-3070,"Spokane, Washington",0.39923324685141925
+Without MAT,4,ITC-0577,"Gem, Idaho",0.4100672709690783
+Without MAT,5,ITC-3062,"Okanogan, Washington",0.4164297456595212
+Without MAT,6,ITC-0568,"Canyon, Idaho",0.42149842755956857
+Without MAT,7,ITC-0555,"Ada, Idaho",0.4337453521103117
+Without MAT,8,ITC-3071,"Stevens, Washington",0.4577411098312446
+Without MAT,9,ITC-3076,"Whitman, Washington",0.46053125266198813
+Without MAT,10,ITC-3074,"Walla Walla, Washington",0.46209208655867023
+Without MAT,11,ITC-0567,"Camas, Idaho",0.4921145034275146
+Without MAT,12,ITC-2212,"Baker, Oregon",0.49440334448945833
+Without MAT,13,ITC-0581,"Jerome, Idaho",0.5029362975189813
+Without MAT,14,ITC-3039,"Adams, Washington",0.5068097460082248
+Without MAT,15,ITC-1759,"Lander, Nevada",0.5150475385223995
+Without MAT,16,ITC-3050,"Garfield, Washington",0.5337875312257514
+Without MAT,17,ITC-0598,"Washington, Idaho",0.5352104309943493
+Without MAT,18,ITC-0596,"Twin Falls, Idaho",0.5478220903943222
+Without MAT,19,ITC-0591,"Owyhee, Idaho",0.5605187196261902
+Without MAT,20,ITC-1755,"Elko, Nevada",0.5684923152329217
+Without MAT,21,ITC-0578,"Gooding, Idaho",0.5703602518100335
+Without MAT,22,ITC-0592,"Payette, Idaho",0.576714863787159
+Without MAT,23,ITC-2234,"Malheur, Oregon",0.582022258491082
+Without MAT,24,ITC-3049,"Franklin, Washington",0.5869520571517535
+Without MAT,25,ITC-3047,"Douglas, Washington",0.5930495004337953
+Without MAT,26,ITC-1758,"Humboldt, Nevada",0.5964561424022957
+Without MAT,27,ITC-0573,"Custer, Idaho",0.6142095950691956
+Without MAT,28,ITC-3040,"Asotin, Washington",0.6173925312087033
+Without MAT,29,ITC-3048,"Ferry, Washington",0.6178910981226677
+Without MAT,30,ITC-3045,"Columbia, Washington",0.6367891103886968
+Without MAT,31,ITC-2236,"Morrow, Oregon",0.6408695516896713
+Without MAT,32,ITC-2864,"Davis, Utah",0.6432216537961125
+Without MAT,33,ITC-1764,"Pershing, Nevada",0.6435096332978256
+Without MAT,34,ITC-0588,"Minidoka, Idaho",0.6488430249796039
+Without MAT,35,ITC-0570,"Cassia, Idaho",0.6570865439285041
+Without MAT,36,ITC-3041,"Benton, Washington",0.65875646116151
+Without MAT,37,ITC-2222,"Gilliam, Oregon",0.6633279551791957
+Without MAT,38,ITC-2241,"Umatilla, Oregon",0.6793801643854169
+Without MAT,39,ITC-2224,"Harney, Oregon",0.684501320829572
+Without MAT,40,ITC-1761,"Lyon, Nevada",0.6878745077316916
+Without MAT,41,ITC-0589,"Nez Perce, Idaho",0.6916120094044507
+Without MAT,42,ITC-2885,"Washington, Utah",0.6940735389281417
+Without MAT,43,ITC-0586,"Lincoln, Idaho",0.7060445310756689
+Without MAT,44,ITC-0571,"Clark, Idaho",0.706090868294874
+Without MAT,45,ITC-0597,"Valley, Idaho",0.7140445326132996
+Without MAT,46,ITC-1757,"Eureka, Nevada",0.7191080649032822
+Without MAT,47,ITC-2876,"Salt Lake, Utah",0.7299933197115781
+Without MAT,48,ITC-0556,"Adams, Idaho",0.7372933395274796
+Without MAT,49,ITC-3051,"Grant, Washington",0.7492403243639785
+Without MAT,50,ITC-0574,"Elmore, Idaho",0.759383385165391
+Without MAP,1,ITC-0568,"Canyon, Idaho",0.20326932135555384
+Without MAP,2,ITC-0555,"Ada, Idaho",0.3199861439761839
+Without MAP,3,ITC-1761,"Lyon, Nevada",0.32541483767982177
+Without MAP,4,ITC-3049,"Franklin, Washington",0.34911635156633464
+Without MAP,5,ITC-1764,"Pershing, Nevada",0.36572982409475935
+Without MAP,6,ITC-3039,"Adams, Washington",0.38923996513698184
+Without MAP,7,ITC-3041,"Benton, Washington",0.43498427796035644
+Without MAP,8,ITC-0581,"Jerome, Idaho",0.44904512104501704
+Without MAP,9,ITC-3074,"Walla Walla, Washington",0.4491858786977828
+Without MAP,10,ITC-3060,"Lincoln, Washington",0.4515459160146351
+Without MAP,11,ITC-1759,"Lander, Nevada",0.4810517670054295
+Without MAP,12,ITC-1758,"Humboldt, Nevada",0.5085157431656113
+Without MAP,13,ITC-1752,"Churchill, Nevada",0.5157696337914663
+Without MAP,14,ITC-3076,"Whitman, Washington",0.5321754643063412
+Without MAP,15,ITC-0592,"Payette, Idaho",0.5369712483307478
+Without MAP,16,ITC-0578,"Gooding, Idaho",0.5373045890560117
+Without MAP,17,ITC-3051,"Grant, Washington",0.537527375892311
+Without MAP,18,ITC-0577,"Gem, Idaho",0.5525560909596205
+Without MAP,19,ITC-2222,"Gilliam, Oregon",0.6192429983835195
+Without MAP,20,ITC-0596,"Twin Falls, Idaho",0.6236216744318924
+Without MAP,21,ITC-3050,"Garfield, Washington",0.6239062820748642
+Without MAP,22,ITC-3070,"Spokane, Washington",0.624820508970025
+Without MAP,23,ITC-3047,"Douglas, Washington",0.6280033862478609
+Without MAP,24,ITC-2234,"Malheur, Oregon",0.6357667947480377
+Without MAP,25,ITC-2864,"Davis, Utah",0.6433864930869174
+Without MAP,26,ITC-0591,"Owyhee, Idaho",0.6481426657813613
+Without MAP,27,ITC-2236,"Morrow, Oregon",0.6641360304424573
+Without MAP,28,ITC-1762,"Mineral, Nevada",0.6795636333260294
+Without MAP,29,ITC-0588,"Minidoka, Idaho",0.694672358043948
+Without MAP,30,ITC-0589,"Nez Perce, Idaho",0.7045044928516886
+Without MAP,31,ITC-0598,"Washington, Idaho",0.7140516464759503
+Without MAP,32,ITC-3040,"Asotin, Washington",0.7232633711505481
+Without MAP,33,ITC-3045,"Columbia, Washington",0.7304174396776435
+Without MAP,34,ITC-2885,"Washington, Utah",0.7610133349049806
+Without MAP,35,ITC-2241,"Umatilla, Oregon",0.7689116681711982
+Without MAP,36,ITC-2876,"Salt Lake, Utah",0.7762652358437696
+Without MAP,37,ITC-0586,"Lincoln, Idaho",0.7775660504410158
+Without MAP,38,ITC-1757,"Eureka, Nevada",0.778895235123835
+Without MAP,39,ITC-1766,"Washoe, Nevada",0.805341339834216
+Without MAP,40,ITC-2224,"Harney, Oregon",0.8356007770889835
+Without MAP,41,ITC-0583,"Latah, Idaho",0.8426409998679067
+Without MAP,42,ITC-3071,"Stevens, Washington",0.844464772098918
+Without MAP,43,ITC-1755,"Elko, Nevada",0.8674859897807019
+Without MAP,44,ITC-0570,"Cassia, Idaho",0.8693576827498894
+Without MAP,45,ITC-2239,"Sherman, Oregon",0.8765232152021307
+Without MAP,46,ITC-1765,"Storey, Nevada",0.8984181438756962
+Without MAP,47,ITC-0582,"Kootenai, Idaho",0.9038980185532419
+Without MAP,48,ITC-0585,"Lewis, Idaho",0.9438673894645189
+Without MAP,49,ITC-2887,"Weber, Utah",0.9543854483530692
+Without MAP,50,ITC-0559,"Benewah, Idaho",0.9685626329776387
+Without TSEAS,1,ITC-2236,"Morrow, Oregon",0.33321299047554553
+Without TSEAS,2,ITC-3076,"Whitman, Washington",0.342614983581191
+Without TSEAS,3,ITC-3074,"Walla Walla, Washington",0.3439655076349349
+Without TSEAS,4,ITC-0568,"Canyon, Idaho",0.39103548873688
+Without TSEAS,5,ITC-2222,"Gilliam, Oregon",0.40346565463720513
+Without TSEAS,6,ITC-3050,"Garfield, Washington",0.4115754617943452
+Without TSEAS,7,ITC-0555,"Ada, Idaho",0.42088997080393564
+Without TSEAS,8,ITC-2241,"Umatilla, Oregon",0.45695327193005697
+Without TSEAS,9,ITC-0592,"Payette, Idaho",0.4790944472053285
+Without TSEAS,10,ITC-3060,"Lincoln, Washington",0.5055771851681371
+Without TSEAS,11,ITC-3039,"Adams, Washington",0.5263063336775147
+Without TSEAS,12,ITC-0581,"Jerome, Idaho",0.5270848588454815
+Without TSEAS,13,ITC-2864,"Davis, Utah",0.5380445887553182
+Without TSEAS,14,ITC-3045,"Columbia, Washington",0.5418863477132436
+Without TSEAS,15,ITC-0577,"Gem, Idaho",0.5570247174237907
+Without TSEAS,16,ITC-3070,"Spokane, Washington",0.5666332471428692
+Without TSEAS,17,ITC-3040,"Asotin, Washington",0.5706852978836432
+Without TSEAS,18,ITC-0578,"Gooding, Idaho",0.581962997963997
+Without TSEAS,19,ITC-3049,"Franklin, Washington",0.5860363138731655
+Without TSEAS,20,ITC-1759,"Lander, Nevada",0.5918703765367255
+Without TSEAS,21,ITC-0589,"Nez Perce, Idaho",0.5976283569116361
+Without TSEAS,22,ITC-0586,"Lincoln, Idaho",0.6215739012248921
+Without TSEAS,23,ITC-1761,"Lyon, Nevada",0.6414406384824615
+Without TSEAS,24,ITC-1764,"Pershing, Nevada",0.6443248572908552
+Without TSEAS,25,ITC-1758,"Humboldt, Nevada",0.6568671043672981
+Without TSEAS,26,ITC-0588,"Minidoka, Idaho",0.6661244213489391
+Without TSEAS,27,ITC-3047,"Douglas, Washington",0.6666558227925062
+Without TSEAS,28,ITC-3041,"Benton, Washington",0.674241912383784
+Without TSEAS,29,ITC-0591,"Owyhee, Idaho",0.7050117956755193
+Without TSEAS,30,ITC-0598,"Washington, Idaho",0.7051006745711355
+Without TSEAS,31,ITC-2234,"Malheur, Oregon",0.7086613250096884
+Without TSEAS,32,ITC-2239,"Sherman, Oregon",0.7165748276772224
+Without TSEAS,33,ITC-2246,"Wheeler, Oregon",0.7185666738841278
+Without TSEAS,34,ITC-0596,"Twin Falls, Idaho",0.7209411323158528
+Without TSEAS,35,ITC-2876,"Salt Lake, Utah",0.7361086619593811
+Without TSEAS,36,ITC-3053,"Island, Washington",0.7370836426465537
+Without TSEAS,37,ITC-3051,"Grant, Washington",0.7478846246152663
+Without TSEAS,38,ITC-2885,"Washington, Utah",0.7784114751392152
+Without TSEAS,39,ITC-2224,"Harney, Oregon",0.8029758839911716
+Without TSEAS,40,ITC-1766,"Washoe, Nevada",0.8062834190465059
+Without TSEAS,41,ITC-1752,"Churchill, Nevada",0.8310544946772351
+Without TSEAS,42,ITC-2230,"Lake, Oregon",0.8359266686230904
+Without TSEAS,43,ITC-1757,"Eureka, Nevada",0.8403121341713532
+Without TSEAS,44,ITC-3071,"Stevens, Washington",0.8536216867482412
+Without TSEAS,45,ITC-3066,"San Juan, Washington",0.8608742219665021
+Without TSEAS,46,ITC-2218,"Crook, Oregon",0.8615089958280795
+Without TSEAS,47,ITC-1762,"Mineral, Nevada",0.9028086500908384
+Without TSEAS,48,ITC-1755,"Elko, Nevada",0.9075497310038655
+Without TSEAS,49,ITC-0570,"Cassia, Idaho",0.9103084765823064
+Without TSEAS,50,ITC-2212,"Baker, Oregon",0.9204915866365704
+Without PSEAS,1,ITC-2864,"Davis, Utah",0.3533896674781701
+Without PSEAS,2,ITC-0555,"Ada, Idaho",0.39154059469558017
+Without PSEAS,3,ITC-2876,"Salt Lake, Utah",0.40691603757901246
+Without PSEAS,4,ITC-0568,"Canyon, Idaho",0.42186802672899776
+Without PSEAS,5,ITC-3074,"Walla Walla, Washington",0.4614650812603762
+Without PSEAS,6,ITC-0577,"Gem, Idaho",0.4661023567210212
+Without PSEAS,7,ITC-0592,"Payette, Idaho",0.46749017793508807
+Without PSEAS,8,ITC-3039,"Adams, Washington",0.47324963037975126
+Without PSEAS,9,ITC-3060,"Lincoln, Washington",0.49760703199643647
+Without PSEAS,10,ITC-0578,"Gooding, Idaho",0.5087209532196678
+Without PSEAS,11,ITC-1759,"Lander, Nevada",0.5122411193173227
+Without PSEAS,12,ITC-3076,"Whitman, Washington",0.5352359254895739
+Without PSEAS,13,ITC-3049,"Franklin, Washington",0.5672699018006185
+Without PSEAS,14,ITC-0581,"Jerome, Idaho",0.5761521460347828
+Without PSEAS,15,ITC-3051,"Grant, Washington",0.5963345368829872
+Without PSEAS,16,ITC-0598,"Washington, Idaho",0.598029488212331
+Without PSEAS,17,ITC-3041,"Benton, Washington",0.6211956264964844
+Without PSEAS,18,ITC-3047,"Douglas, Washington",0.6282695227901964
+Without PSEAS,19,ITC-1764,"Pershing, Nevada",0.6292923050568765
+Without PSEAS,20,ITC-1757,"Eureka, Nevada",0.6299492823781877
+Without PSEAS,21,ITC-3050,"Garfield, Washington",0.6356942672476609
+Without PSEAS,22,ITC-3040,"Asotin, Washington",0.6363408264427522
+Without PSEAS,23,ITC-2887,"Weber, Utah",0.6520280431630955
+Without PSEAS,24,ITC-3070,"Spokane, Washington",0.6539977342645662
+Without PSEAS,25,ITC-2222,"Gilliam, Oregon",0.6573151514073035
+Without PSEAS,26,ITC-1761,"Lyon, Nevada",0.6609568907169701
+Without PSEAS,27,ITC-1758,"Humboldt, Nevada",0.6617737986167053
+Without PSEAS,28,ITC-0596,"Twin Falls, Idaho",0.6695020721006175
+Without PSEAS,29,ITC-0589,"Nez Perce, Idaho",0.6709819116437962
+Without PSEAS,30,ITC-2885,"Washington, Utah",0.6791222117255598
+Without PSEAS,31,ITC-2236,"Morrow, Oregon",0.6850506723121159
+Without PSEAS,32,ITC-2883,"Utah, Utah",0.7075058827470654
+Without PSEAS,33,ITC-1752,"Churchill, Nevada",0.7132983970532735
+Without PSEAS,34,ITC-0591,"Owyhee, Idaho",0.7213461603452332
+Without PSEAS,35,ITC-2234,"Malheur, Oregon",0.7245734685012266
+Without PSEAS,36,ITC-1755,"Elko, Nevada",0.7585317418994129
+Without PSEAS,37,ITC-0588,"Minidoka, Idaho",0.7608822213680629
+Without PSEAS,38,ITC-0570,"Cassia, Idaho",0.7616381692536734
+Without PSEAS,39,ITC-3045,"Columbia, Washington",0.7662963991341992
+Without PSEAS,40,ITC-2239,"Sherman, Oregon",0.7697489461065775
+Without PSEAS,41,ITC-2241,"Umatilla, Oregon",0.7713135587336505
+Without PSEAS,42,ITC-1766,"Washoe, Nevada",0.7931743867708712
+Without PSEAS,43,ITC-1765,"Storey, Nevada",0.796079941593999
+Without PSEAS,44,ITC-0586,"Lincoln, Idaho",0.8002978529986389
+Without PSEAS,45,ITC-0593,"Power, Idaho",0.8008664848230961
+Without PSEAS,46,ITC-1762,"Mineral, Nevada",0.8448509416321993
+Without PSEAS,47,ITC-2870,"Juab, Utah",0.8588897129512899
+Without PSEAS,48,ITC-3071,"Stevens, Washington",0.8716898802150412
+Without PSEAS,49,ITC-2224,"Harney, Oregon",0.886330169407955
+Without PSEAS,50,ITC-0574,"Elmore, Idaho",0.8875188764994519
+Without WSPF,1,ITC-0264,"Denver, Colorado",0.1224368985472727
+Without WSPF,2,ITC-0255,"Broomfield, Colorado",0.14637746366077944
+Without WSPF,3,ITC-0102,"Coconino, Arizona",0.3422215360178573
+Without WSPF,4,ITC-0555,"Ada, Idaho",0.3649842600303322
+Without WSPF,5,ITC-1824,"Sandoval, New Mexico",0.36870447173708876
+Without WSPF,6,ITC-3074,"Walla Walla, Washington",0.3729438281281544
+Without WSPF,7,ITC-0568,"Canyon, Idaho",0.40356550128680674
+Without WSPF,8,ITC-3039,"Adams, Washington",0.45746959591056785
+Without WSPF,9,ITC-0577,"Gem, Idaho",0.490050490106989
+Without WSPF,10,ITC-3060,"Lincoln, Washington",0.49928564060495656
+Without WSPF,11,ITC-1822,"San Juan, New Mexico",0.5006673163949867
+Without WSPF,12,ITC-3076,"Whitman, Washington",0.5108712941006438
+Without WSPF,13,ITC-0592,"Payette, Idaho",0.5166930947694987
+Without WSPF,14,ITC-1758,"Humboldt, Nevada",0.5281873591157563
+Without WSPF,15,ITC-3049,"Franklin, Washington",0.5362781870976288
+Without WSPF,16,ITC-1764,"Pershing, Nevada",0.5491760152272033
+Without WSPF,17,ITC-0109,"Navajo, Arizona",0.5572925362480172
+Without WSPF,18,ITC-1814,"Los Alamos, New Mexico",0.5653670176438911
+Without WSPF,19,ITC-0581,"Jerome, Idaho",0.5670832734406546
+Without WSPF,20,ITC-0100,"Apache, Arizona",0.5755060910907606
+Without WSPF,21,ITC-0591,"Owyhee, Idaho",0.5813285079147225
+Without WSPF,22,ITC-1759,"Lander, Nevada",0.5842665682992652
+Without WSPF,23,ITC-2234,"Malheur, Oregon",0.5851903679316705
+Without WSPF,24,ITC-0578,"Gooding, Idaho",0.5941381356235522
+Without WSPF,25,ITC-3041,"Benton, Washington",0.5985879784482733
+Without WSPF,26,ITC-0248,"Adams, Colorado",0.6051353460261895
+Without WSPF,27,ITC-2885,"Washington, Utah",0.614846960231661
+Without WSPF,28,ITC-3582,"Dnistrovskyi, Chernivetska",0.6316471847282777
+Without WSPF,29,ITC-1766,"Washoe, Nevada",0.6344091965210455
+Without WSPF,30,ITC-3050,"Garfield, Washington",0.6353427662267019
+Without WSPF,31,ITC-2222,"Gilliam, Oregon",0.6390457504809648
+Without WSPF,32,ITC-0250,"Arapahoe, Colorado",0.6402527157979833
+Without WSPF,33,ITC-2864,"Davis, Utah",0.6433783392172485
+Without WSPF,34,ITC-3070,"Spokane, Washington",0.6525356317274417
+Without WSPF,35,ITC-1816,"McKinley, New Mexico",0.656119009089189
+Without WSPF,36,ITC-0596,"Twin Falls, Idaho",0.659923475580798
+Without WSPF,37,ITC-2871,"Kane, Utah",0.6624862630536804
+Without WSPF,38,ITC-2236,"Morrow, Oregon",0.667407635978276
+Without WSPF,39,ITC-0598,"Washington, Idaho",0.6821368754497648
+Without WSPF,40,ITC-1799,"Bernalillo, New Mexico",0.683328056775458
+Without WSPF,41,ITC-1761,"Lyon, Nevada",0.6855540313099856
+Without WSPF,42,ITC-1660,"Arthur, Nebraska",0.6894439168277104
+Without WSPF,43,ITC-3581,"Chernivetskyi, Chernivetska",0.7046157371262561
+Without WSPF,44,ITC-3040,"Asotin, Washington",0.7204147380459295
+Without WSPF,45,ITC-3047,"Douglas, Washington",0.7217773916382935
+Without WSPF,46,ITC-3051,"Grant, Washington",0.7275750345840584
+Without WSPF,47,ITC-1825,"Santa Fe, New Mexico",0.7298446705968851
+Without WSPF,48,ITC-3045,"Columbia, Washington",0.7370045613657392
+Without WSPF,49,ITC-1820,"Rio Arriba, New Mexico",0.7429731824241238
+Without WSPF,50,ITC-2241,"Umatilla, Oregon",0.743188852105185
+Manhattan: all five,1,ITC-0568,"Canyon, Idaho",0.6899493421535848
+Manhattan: all five,2,ITC-0555,"Ada, Idaho",0.843582906075064
+Manhattan: all five,3,ITC-3060,"Lincoln, Washington",0.8538400835555359
+Manhattan: all five,4,ITC-2864,"Davis, Utah",0.9218929622876182
+Manhattan: all five,5,ITC-3074,"Walla Walla, Washington",0.9289395886341134
+Manhattan: all five,6,ITC-3076,"Whitman, Washington",1.0074410686104345
+Manhattan: all five,7,ITC-0577,"Gem, Idaho",1.0206961826670475
+Manhattan: all five,8,ITC-1764,"Pershing, Nevada",1.0390267473914854
+Manhattan: all five,9,ITC-3039,"Adams, Washington",1.0617198306039741
+Manhattan: all five,10,ITC-3049,"Franklin, Washington",1.1316328293359428
+Manhattan: all five,11,ITC-1761,"Lyon, Nevada",1.1515578515175682
+Manhattan: all five,12,ITC-0592,"Payette, Idaho",1.1729406292353088
+Manhattan: all five,13,ITC-2236,"Morrow, Oregon",1.173514454674876
+Manhattan: all five,14,ITC-3070,"Spokane, Washington",1.1855662076554914
+Manhattan: all five,15,ITC-3050,"Garfield, Washington",1.1938289150411163
+Manhattan: all five,16,ITC-0581,"Jerome, Idaho",1.226826293002668
+Manhattan: all five,17,ITC-1759,"Lander, Nevada",1.2484062350601148
+Manhattan: all five,18,ITC-3041,"Benton, Washington",1.2681515175233529
+Manhattan: all five,19,ITC-1758,"Humboldt, Nevada",1.2686340256946835
+Manhattan: all five,20,ITC-2222,"Gilliam, Oregon",1.3184351385564614
+Manhattan: all five,21,ITC-0578,"Gooding, Idaho",1.3645836177010697
+Manhattan: all five,22,ITC-2876,"Salt Lake, Utah",1.3937822739201575
+Manhattan: all five,23,ITC-0591,"Owyhee, Idaho",1.410260036746929
+Manhattan: all five,24,ITC-2241,"Umatilla, Oregon",1.4157697350835652
+Manhattan: all five,25,ITC-1752,"Churchill, Nevada",1.4282449548606533
+Manhattan: all five,26,ITC-2234,"Malheur, Oregon",1.4353699762091752
+Manhattan: all five,27,ITC-3051,"Grant, Washington",1.4415110287383148
+Manhattan: all five,28,ITC-0596,"Twin Falls, Idaho",1.4663347340952726
+Manhattan: all five,29,ITC-0598,"Washington, Idaho",1.4767077233501
+Manhattan: all five,30,ITC-3040,"Asotin, Washington",1.4868423948411509
+Manhattan: all five,31,ITC-3045,"Columbia, Washington",1.4924813040026461
+Manhattan: all five,32,ITC-3047,"Douglas, Washington",1.5061117728771556
+Manhattan: all five,33,ITC-1755,"Elko, Nevada",1.5407486131744053
+Manhattan: all five,34,ITC-0589,"Nez Perce, Idaho",1.6110711172003396
+Manhattan: all five,35,ITC-2212,"Baker, Oregon",1.6189445174837656
+Manhattan: all five,36,ITC-2885,"Washington, Utah",1.6466725781906806
+Manhattan: all five,37,ITC-1757,"Eureka, Nevada",1.6520668151353899
+Manhattan: all five,38,ITC-3071,"Stevens, Washington",1.6628519766292107
+Manhattan: all five,39,ITC-0586,"Lincoln, Idaho",1.6955314196739413
+Manhattan: all five,40,ITC-0588,"Minidoka, Idaho",1.6961845378685576
+Manhattan: all five,41,ITC-2887,"Weber, Utah",1.7452788827382577
+Manhattan: all five,42,ITC-0561,"Blaine, Idaho",1.754942140124319
+Manhattan: all five,43,ITC-0570,"Cassia, Idaho",1.775714574161575
+Manhattan: all five,44,ITC-0574,"Elmore, Idaho",1.8222844906387472
+Manhattan: all five,45,ITC-1766,"Washoe, Nevada",1.8545302159375279
+Manhattan: all five,46,ITC-3062,"Okanogan, Washington",1.8856873842593278
+Manhattan: all five,47,ITC-0255,"Broomfield, Colorado",1.9002322961238363
+Manhattan: all five,48,ITC-2239,"Sherman, Oregon",1.910509922236173
+Manhattan: all five,49,ITC-1762,"Mineral, Nevada",1.915694853378206
+Manhattan: all five,50,ITC-2224,"Harney, Oregon",1.938829212971625
+Double weight: MAT,1,ITC-0568,"Canyon, Idaho",0.4227315884967311
+Double weight: MAT,2,ITC-0555,"Ada, Idaho",0.43469645544175095
+Double weight: MAT,3,ITC-3074,"Walla Walla, Washington",0.478846660093521
+Double weight: MAT,4,ITC-3039,"Adams, Washington",0.5499516490188634
+Double weight: MAT,5,ITC-0592,"Payette, Idaho",0.5791322808357698
+Double weight: MAT,6,ITC-3049,"Franklin, Washington",0.6042340217829361
+Double weight: MAT,7,ITC-3076,"Whitman, Washington",0.6066191936364761
+Double weight: MAT,8,ITC-2864,"Davis, Utah",0.6436318852875579
+Double weight: MAT,9,ITC-1764,"Pershing, Nevada",0.6451400153117108
+Double weight: MAT,10,ITC-0581,"Jerome, Idaho",0.6633437209294469
+Double weight: MAT,11,ITC-3060,"Lincoln, Washington",0.6667077799725806
+Double weight: MAT,12,ITC-0577,"Gem, Idaho",0.6726219192654194
+Double weight: MAT,13,ITC-0578,"Gooding, Idaho",0.6759672580909692
+Double weight: MAT,14,ITC-1759,"Lander, Nevada",0.678308840195398
+Double weight: MAT,15,ITC-2222,"Gilliam, Oregon",0.6879989567121496
+Double weight: MAT,16,ITC-1761,"Lyon, Nevada",0.6895715742848864
+Double weight: MAT,17,ITC-3041,"Benton, Washington",0.6906681466836113
+Double weight: MAT,18,ITC-1758,"Humboldt, Nevada",0.7249928175171758
+Double weight: MAT,19,ITC-2236,"Morrow, Oregon",0.726677768294859
+Double weight: MAT,20,ITC-3050,"Garfield, Washington",0.7353543068071895
+Double weight: MAT,21,ITC-3051,"Grant, Washington",0.7654692478297194
+Double weight: MAT,22,ITC-2876,"Salt Lake, Utah",0.8314202180748677
+Double weight: MAT,23,ITC-1752,"Churchill, Nevada",0.8324703135051188
+Double weight: MAT,24,ITC-3040,"Asotin, Washington",0.8341298213911125
+Double weight: MAT,25,ITC-0589,"Nez Perce, Idaho",0.836921330307225
+Double weight: MAT,26,ITC-3047,"Douglas, Washington",0.83749499269678
+Double weight: MAT,27,ITC-3070,"Spokane, Washington",0.8383324241918668
+Double weight: MAT,28,ITC-2234,"Malheur, Oregon",0.8470846650322276
+Double weight: MAT,29,ITC-0591,"Owyhee, Idaho",0.8547609108269909
+Double weight: MAT,30,ITC-2241,"Umatilla, Oregon",0.8618956764588259
+Double weight: MAT,31,ITC-0596,"Twin Falls, Idaho",0.8637948496407456
+Double weight: MAT,32,ITC-2885,"Washington, Utah",0.8782287304730197
+Double weight: MAT,33,ITC-0598,"Washington, Idaho",0.8785034135649101
+Double weight: MAT,34,ITC-3045,"Columbia, Washington",0.8809188310263211
+Double weight: MAT,35,ITC-0588,"Minidoka, Idaho",0.9097898033206689
+Double weight: MAT,36,ITC-1766,"Washoe, Nevada",0.9133787890886665
+Double weight: MAT,37,ITC-2239,"Sherman, Oregon",0.9318360208630223
+Double weight: MAT,38,ITC-1757,"Eureka, Nevada",0.9464155667286256
+Double weight: MAT,39,ITC-1762,"Mineral, Nevada",0.9526727187131813
+Double weight: MAT,40,ITC-0586,"Lincoln, Idaho",0.9567975724003048
+Double weight: MAT,41,ITC-1765,"Storey, Nevada",1.0189562067968971
+Double weight: MAT,42,ITC-2224,"Harney, Oregon",1.1010980873722649
+Double weight: MAT,43,ITC-0570,"Cassia, Idaho",1.109058914462574
+Double weight: MAT,44,ITC-2887,"Weber, Utah",1.1164596545581082
+Double weight: MAT,45,ITC-1755,"Elko, Nevada",1.1513991364811877
+Double weight: MAT,46,ITC-3071,"Stevens, Washington",1.1690999843647998
+Double weight: MAT,47,ITC-0574,"Elmore, Idaho",1.1930922675872853
+Double weight: MAT,48,ITC-1760,"Lincoln, Nevada",1.2418127394190783
+Double weight: MAT,49,ITC-0214,"Modoc, California",1.249654394855736
+Double weight: MAT,50,ITC-2246,"Wheeler, Oregon",1.2543058480859763
+Double weight: MAP,1,ITC-3074,"Walla Walla, Washington",0.4909737943326165
+Double weight: MAP,2,ITC-0555,"Ada, Idaho",0.5241229879657764
+Double weight: MAP,3,ITC-3076,"Whitman, Washington",0.5448533343542266
+Double weight: MAP,4,ITC-3060,"Lincoln, Washington",0.5549846263575003
+Double weight: MAP,5,ITC-0568,"Canyon, Idaho",0.5612882533456504
+Double weight: MAP,6,ITC-0577,"Gem, Idaho",0.5614776748364511
+Double weight: MAP,7,ITC-0592,"Payette, Idaho",0.6161624065822262
+Double weight: MAP,8,ITC-3039,"Adams, Washington",0.6385884311883904
+Double weight: MAP,9,ITC-2864,"Davis, Utah",0.6434671088597614
+Double weight: MAP,10,ITC-3050,"Garfield, Washington",0.6606179199957298
+Double weight: MAP,11,ITC-3070,"Spokane, Washington",0.6868680880732321
+Double weight: MAP,12,ITC-0581,"Jerome, Idaho",0.7009481369718384
+Double weight: MAP,13,ITC-0578,"Gooding, Idaho",0.7025285257092256
+Double weight: MAP,14,ITC-1759,"Lander, Nevada",0.7028271815220031
+Double weight: MAP,15,ITC-2236,"Morrow, Oregon",0.7054769268268469
+Double weight: MAP,16,ITC-2222,"Gilliam, Oregon",0.7279317615767346
+Double weight: MAP,17,ITC-0598,"Washington, Idaho",0.7405057050795363
+Double weight: MAP,18,ITC-3040,"Asotin, Washington",0.7442017149121625
+Double weight: MAP,19,ITC-3049,"Franklin, Washington",0.7666350132518527
+Double weight: MAP,20,ITC-2241,"Umatilla, Oregon",0.783068586656979
+Double weight: MAP,21,ITC-2876,"Salt Lake, Utah",0.7883921038846137
+Double weight: MAP,22,ITC-1758,"Humboldt, Nevada",0.7891680772900324
+Double weight: MAP,23,ITC-0591,"Owyhee, Idaho",0.7903850545923812
+Double weight: MAP,24,ITC-3045,"Columbia, Washington",0.8049898892415753
+Double weight: MAP,25,ITC-2234,"Malheur, Oregon",0.8075288984349897
+Double weight: MAP,26,ITC-0596,"Twin Falls, Idaho",0.8107691361717256
+Double weight: MAP,27,ITC-3047,"Douglas, Washington",0.8116140213292116
+Double weight: MAP,28,ITC-2885,"Washington, Utah",0.8209034563000003
+Double weight: MAP,29,ITC-0589,"Nez Perce, Idaho",0.8260979991668436
+Double weight: MAP,30,ITC-1764,"Pershing, Nevada",0.8345968986709169
+Double weight: MAP,31,ITC-3041,"Benton, Washington",0.8495712106072792
+Double weight: MAP,32,ITC-0588,"Minidoka, Idaho",0.875297133698383
+Double weight: MAP,33,ITC-1757,"Eureka, Nevada",0.8978535775150616
+Double weight: MAP,34,ITC-0586,"Lincoln, Idaho",0.8996396565372924
+Double weight: MAP,35,ITC-1761,"Lyon, Nevada",0.9180334840661689
+Double weight: MAP,36,ITC-1766,"Washoe, Nevada",0.9205611201501346
+Double weight: MAP,37,ITC-3051,"Grant, Washington",0.9264818148201086
+Double weight: MAP,38,ITC-3071,"Stevens, Washington",0.9290860809178215
+Double weight: MAP,39,ITC-1755,"Elko, Nevada",0.9467690011310615
+Double weight: MAP,40,ITC-0570,"Cassia, Idaho",0.9518359214720525
+Double weight: MAP,41,ITC-2239,"Sherman, Oregon",0.9581983804700556
+Double weight: MAP,42,ITC-2887,"Weber, Utah",0.9582190533065837
+Double weight: MAP,43,ITC-2212,"Baker, Oregon",0.9728851732682638
+Double weight: MAP,44,ITC-2224,"Harney, Oregon",0.9913275934627138
+Double weight: MAP,45,ITC-0574,"Elmore, Idaho",1.0011162066091197
+Double weight: MAP,46,ITC-1752,"Churchill, Nevada",1.0564389200412625
+Double weight: MAP,47,ITC-2230,"Lake, Oregon",1.0827477689662126
+Double weight: MAP,48,ITC-2246,"Wheeler, Oregon",1.1032321534606724
+Double weight: MAP,49,ITC-0593,"Power, Idaho",1.1070892420197562
+Double weight: MAP,50,ITC-3048,"Ferry, Washington",1.114551166517599
+Double weight: TSEAS,1,ITC-0555,"Ada, Idaho",0.4471550864382319
+Double weight: TSEAS,2,ITC-0568,"Canyon, Idaho",0.45105893949290915
+Double weight: TSEAS,3,ITC-3060,"Lincoln, Washington",0.5062542440317249
+Double weight: TSEAS,4,ITC-3039,"Adams, Washington",0.531323421315512
+Double weight: TSEAS,5,ITC-0577,"Gem, Idaho",0.5570447712484788
+Double weight: TSEAS,6,ITC-3074,"Walla Walla, Washington",0.5696586257578368
+Double weight: TSEAS,7,ITC-3049,"Franklin, Washington",0.6051222267415151
+Double weight: TSEAS,8,ITC-1759,"Lander, Nevada",0.6124265727444258
+Double weight: TSEAS,9,ITC-0581,"Jerome, Idaho",0.6443224061248096
+Double weight: TSEAS,10,ITC-1764,"Pershing, Nevada",0.6443258226864849
+Double weight: TSEAS,11,ITC-0592,"Payette, Idaho",0.6621651934948732
+Double weight: TSEAS,12,ITC-0578,"Gooding, Idaho",0.6660042190981861
+Double weight: TSEAS,13,ITC-1758,"Humboldt, Nevada",0.6707459447965687
+Double weight: TSEAS,14,ITC-3041,"Benton, Washington",0.6755593294082085
+Double weight: TSEAS,15,ITC-3076,"Whitman, Washington",0.680213829462654
+Double weight: TSEAS,16,ITC-0596,"Twin Falls, Idaho",0.7255993858356135
+Double weight: TSEAS,17,ITC-1761,"Lyon, Nevada",0.7329626196144423
+Double weight: TSEAS,18,ITC-2864,"Davis, Utah",0.7338283996835654
+Double weight: TSEAS,19,ITC-3070,"Spokane, Washington",0.7356053303744247
+Double weight: TSEAS,20,ITC-0591,"Owyhee, Idaho",0.7401052747329603
+Double weight: TSEAS,21,ITC-2234,"Malheur, Oregon",0.7443799201666673
+Double weight: TSEAS,22,ITC-0598,"Washington, Idaho",0.7490337053896082
+Double weight: TSEAS,23,ITC-3051,"Grant, Washington",0.7667938584066243
+Double weight: TSEAS,24,ITC-3047,"Douglas, Washington",0.7801766381363904
+Double weight: TSEAS,25,ITC-2885,"Washington, Utah",0.8044248602822253
+Double weight: TSEAS,26,ITC-3050,"Garfield, Washington",0.8101115505168015
+Double weight: TSEAS,27,ITC-2876,"Salt Lake, Utah",0.826010813267938
+Double weight: TSEAS,28,ITC-1752,"Churchill, Nevada",0.8315226598211847
+Double weight: TSEAS,29,ITC-1757,"Eureka, Nevada",0.840651147099434
+Double weight: TSEAS,30,ITC-2222,"Gilliam, Oregon",0.8663498173875209
+Double weight: TSEAS,31,ITC-3040,"Asotin, Washington",0.8667550907296226
+Double weight: TSEAS,32,ITC-0588,"Minidoka, Idaho",0.8972140282973095
+Double weight: TSEAS,33,ITC-0589,"Nez Perce, Idaho",0.9064242007420009
+Double weight: TSEAS,34,ITC-1755,"Elko, Nevada",0.9084365523928039
+Double weight: TSEAS,35,ITC-2236,"Morrow, Oregon",0.9098040801157472
+Double weight: TSEAS,36,ITC-0570,"Cassia, Idaho",0.9127501736089724
+Double weight: TSEAS,37,ITC-1766,"Washoe, Nevada",0.9197361022318943
+Double weight: TSEAS,38,ITC-3071,"Stevens, Washington",0.9206800274712175
+Double weight: TSEAS,39,ITC-3045,"Columbia, Washington",0.9422725423827278
+Double weight: TSEAS,40,ITC-1762,"Mineral, Nevada",0.9854956921473268
+Double weight: TSEAS,41,ITC-2887,"Weber, Utah",0.9906668566446089
+Double weight: TSEAS,42,ITC-2241,"Umatilla, Oregon",0.9978052275525463
+Double weight: TSEAS,43,ITC-0574,"Elmore, Idaho",1.002212883006721
+Double weight: TSEAS,44,ITC-0586,"Lincoln, Idaho",1.013709208663434
+Double weight: TSEAS,45,ITC-2224,"Harney, Oregon",1.0179335862230332
+Double weight: TSEAS,46,ITC-2212,"Baker, Oregon",1.021828671455633
+Double weight: TSEAS,47,ITC-1765,"Storey, Nevada",1.062553158840899
+Double weight: TSEAS,48,ITC-2239,"Sherman, Oregon",1.083031670572508
+Double weight: TSEAS,49,ITC-0593,"Power, Idaho",1.1186003604476364
+Double weight: TSEAS,50,ITC-3048,"Ferry, Washington",1.1368455794660508
+Double weight: PSEAS,1,ITC-0568,"Canyon, Idaho",0.42236274500947646
+Double weight: PSEAS,2,ITC-0555,"Ada, Idaho",0.4730665931519069
+Double weight: PSEAS,3,ITC-3074,"Walla Walla, Washington",0.47945093504989644
+Double weight: PSEAS,4,ITC-3060,"Lincoln, Washington",0.5140903534111174
+Double weight: PSEAS,5,ITC-3076,"Whitman, Washington",0.5418471969401591
+Double weight: PSEAS,6,ITC-3039,"Adams, Washington",0.5790835192378706
+Double weight: PSEAS,7,ITC-0581,"Jerome, Idaho",0.6008481639134295
+Double weight: PSEAS,8,ITC-3049,"Franklin, Washington",0.622749009622475
+Double weight: PSEAS,9,ITC-0577,"Gem, Idaho",0.635077952739216
+Double weight: PSEAS,10,ITC-3050,"Garfield, Washington",0.6492825914965101
+Double weight: PSEAS,11,ITC-1764,"Pershing, Nevada",0.6590155402566008
+Double weight: PSEAS,12,ITC-3070,"Spokane, Washington",0.6591474815394139
+Double weight: PSEAS,13,ITC-1758,"Humboldt, Nevada",0.6659053646918133
+Double weight: PSEAS,14,ITC-0592,"Payette, Idaho",0.6704082087454643
+Double weight: PSEAS,15,ITC-1759,"Lander, Nevada",0.6804306616443332
+Double weight: PSEAS,16,ITC-2236,"Morrow, Oregon",0.6851860605570104
+Double weight: PSEAS,17,ITC-2222,"Gilliam, Oregon",0.6937458701063475
+Double weight: PSEAS,18,ITC-1761,"Lyon, Nevada",0.7154133651691229
+Double weight: PSEAS,19,ITC-0578,"Gooding, Idaho",0.7234953646092699
+Double weight: PSEAS,20,ITC-0591,"Owyhee, Idaho",0.724194149855106
+Double weight: PSEAS,21,ITC-3041,"Benton, Washington",0.7246368453142932
+Double weight: PSEAS,22,ITC-2234,"Malheur, Oregon",0.728900286634546
+Double weight: PSEAS,23,ITC-3045,"Columbia, Washington",0.7709138646050985
+Double weight: PSEAS,24,ITC-0596,"Twin Falls, Idaho",0.7733159512404117
+Double weight: PSEAS,25,ITC-2241,"Umatilla, Oregon",0.7807028621520513
+Double weight: PSEAS,26,ITC-3047,"Douglas, Washington",0.8114080228158533
+Double weight: PSEAS,27,ITC-0588,"Minidoka, Idaho",0.8183966046465164
+Double weight: PSEAS,28,ITC-3040,"Asotin, Washington",0.8197660941563844
+Double weight: PSEAS,29,ITC-0598,"Washington, Idaho",0.8370060838003832
+Double weight: PSEAS,30,ITC-2864,"Davis, Utah",0.838517645962618
+Double weight: PSEAS,31,ITC-0589,"Nez Perce, Idaho",0.8535500916305464
+Double weight: PSEAS,32,ITC-0586,"Lincoln, Idaho",0.8794792896360588
+Double weight: PSEAS,33,ITC-3051,"Grant, Washington",0.889769269612403
+Double weight: PSEAS,34,ITC-2885,"Washington, Utah",0.8898408857820992
+Double weight: PSEAS,35,ITC-3071,"Stevens, Washington",0.903591970859636
+Double weight: PSEAS,36,ITC-1766,"Washoe, Nevada",0.931064896636477
+Double weight: PSEAS,37,ITC-1752,"Churchill, Nevada",0.9344982095651992
+Double weight: PSEAS,38,ITC-2224,"Harney, Oregon",0.9462440948452755
+Double weight: PSEAS,39,ITC-2212,"Baker, Oregon",0.9745912264868958
+Double weight: PSEAS,40,ITC-1757,"Eureka, Nevada",1.0079596894650176
+Double weight: PSEAS,41,ITC-2876,"Salt Lake, Utah",1.0288679041588316
+Double weight: PSEAS,42,ITC-1762,"Mineral, Nevada",1.0356119467942453
+Double weight: PSEAS,43,ITC-1755,"Elko, Nevada",1.0361144147725938
+Double weight: PSEAS,44,ITC-0570,"Cassia, Idaho",1.0400392786316877
+Double weight: PSEAS,45,ITC-2239,"Sherman, Oregon",1.0459080471492375
+Double weight: PSEAS,46,ITC-2230,"Lake, Oregon",1.0584438990351326
+Double weight: PSEAS,47,ITC-0574,"Elmore, Idaho",1.1011096805037042
+Double weight: PSEAS,48,ITC-2246,"Wheeler, Oregon",1.1077580769704432
+Double weight: PSEAS,49,ITC-0583,"Latah, Idaho",1.1276521636347296
+Double weight: PSEAS,50,ITC-2218,"Crook, Oregon",1.1520810450334085
+Double weight: WSPF,1,ITC-0568,"Canyon, Idaho",0.43988385571567273
+Double weight: WSPF,2,ITC-0555,"Ada, Idaho",0.49384464032834385
+Double weight: WSPF,3,ITC-3060,"Lincoln, Washington",0.5124602412366918
+Double weight: WSPF,4,ITC-3074,"Walla Walla, Washington",0.551122601064394
+Double weight: WSPF,5,ITC-3076,"Whitman, Washington",0.5648773332596395
+Double weight: WSPF,6,ITC-3039,"Adams, Washington",0.5916286873748688
+Double weight: WSPF,7,ITC-0581,"Jerome, Idaho",0.6094147786544538
+Double weight: WSPF,8,ITC-0577,"Gem, Idaho",0.6167867785079572
+Double weight: WSPF,9,ITC-1759,"Lander, Nevada",0.6196849415574085
+Double weight: WSPF,10,ITC-0592,"Payette, Idaho",0.6332633564612753
+Double weight: WSPF,11,ITC-2864,"Davis, Utah",0.6434752616045757
+Double weight: WSPF,12,ITC-3050,"Garfield, Washington",0.6496265499772673
+Double weight: WSPF,13,ITC-3049,"Franklin, Washington",0.6496284911531649
+Double weight: WSPF,14,ITC-0578,"Gooding, Idaho",0.6551659535213938
+Double weight: WSPF,15,ITC-3070,"Spokane, Washington",0.6605949501540312
+Double weight: WSPF,16,ITC-1761,"Lyon, Nevada",0.6918785764883032
+Double weight: WSPF,17,ITC-2236,"Morrow, Oregon",0.702382665400283
+Double weight: WSPF,18,ITC-2222,"Gilliam, Oregon",0.710610349876386
+Double weight: WSPF,19,ITC-1764,"Pershing, Nevada",0.7271285937182411
+Double weight: WSPF,20,ITC-3047,"Douglas, Washington",0.7294813018006528
+Double weight: WSPF,21,ITC-3041,"Benton, Washington",0.7434211431097585
+Double weight: WSPF,22,ITC-3040,"Asotin, Washington",0.7469596386234492
+Double weight: WSPF,23,ITC-0598,"Washington, Idaho",0.7700050235173721
+Double weight: WSPF,24,ITC-1758,"Humboldt, Nevada",0.7761395679458969
+Double weight: WSPF,25,ITC-0589,"Nez Perce, Idaho",0.7767017742113538
+Double weight: WSPF,26,ITC-0596,"Twin Falls, Idaho",0.7815059765396828
+Double weight: WSPF,27,ITC-3051,"Grant, Washington",0.7860908357664794
+Double weight: WSPF,28,ITC-2876,"Salt Lake, Utah",0.7866160189104703
+Double weight: WSPF,29,ITC-3045,"Columbia, Washington",0.7989634750678546
+Double weight: WSPF,30,ITC-2241,"Umatilla, Oregon",0.8075220708843509
+Double weight: WSPF,31,ITC-0588,"Minidoka, Idaho",0.8231134176500433
+Double weight: WSPF,32,ITC-0591,"Owyhee, Idaho",0.8407464633376778
+Double weight: WSPF,33,ITC-2234,"Malheur, Oregon",0.8448991492431611
+Double weight: WSPF,34,ITC-0586,"Lincoln, Idaho",0.8461549127940384
+Double weight: WSPF,35,ITC-1752,"Churchill, Nevada",0.8788957097608775
+Double weight: WSPF,36,ITC-1757,"Eureka, Nevada",0.9021839854246786
+Double weight: WSPF,37,ITC-1755,"Elko, Nevada",0.9087512798837346
+Double weight: WSPF,38,ITC-3071,"Stevens, Washington",0.9136953590943363
+Double weight: WSPF,39,ITC-2885,"Washington, Utah",0.9354073957171672
+Double weight: WSPF,40,ITC-2224,"Harney, Oregon",0.9571640925833932
+Double weight: WSPF,41,ITC-0570,"Cassia, Idaho",0.966708502191349
+Double weight: WSPF,42,ITC-2887,"Weber, Utah",0.9680519150009046
+Double weight: WSPF,43,ITC-2239,"Sherman, Oregon",1.002979312201043
+Double weight: WSPF,44,ITC-1762,"Mineral, Nevada",1.0407007230777567
+Double weight: WSPF,45,ITC-2212,"Baker, Oregon",1.042518299061516
+Double weight: WSPF,46,ITC-1766,"Washoe, Nevada",1.0457210053104806
+Double weight: WSPF,47,ITC-0593,"Power, Idaho",1.105096791840443
+Double weight: WSPF,48,ITC-2230,"Lake, Oregon",1.1218213867462785
+Double weight: WSPF,49,ITC-0585,"Lewis, Idaho",1.131297227867824
+Double weight: WSPF,50,ITC-0583,"Latah, Idaho",1.135685165146623

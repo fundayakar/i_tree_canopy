@@ -1,0 +1,13 @@
+scenario,distance_metric,winner,winner_ID,Canyon_rank,Ada_rank,top10_overlap,spearman_full_ranks
+Baseline: all five,L2,"Canyon, Idaho",ITC-0568,1,2,10,1.0
+Without MAT,L2,"Lincoln, Washington",ITC-3060,6,7,6,0.9552210318719616
+Without MAP,L2,"Canyon, Idaho",ITC-0568,1,2,7,0.7567646666094616
+Without TSEAS,L2,"Morrow, Oregon",ITC-2236,4,7,6,0.9666526890550258
+Without PSEAS,L2,"Davis, Utah",ITC-2864,4,2,7,0.9696588646705742
+Without WSPF,L2,"Denver, Colorado",ITC-0264,7,4,6,0.7325576318206548
+Manhattan: all five,L1,"Canyon, Idaho",ITC-0568,1,2,8,0.9388401069222754
+Double weight: MAT,L2,"Canyon, Idaho",ITC-0568,1,2,8,0.9705905811502065
+Double weight: MAP,L2,"Walla Walla, Washington",ITC-3074,5,2,8,0.9296327240795609
+Double weight: TSEAS,L2,"Ada, Idaho",ITC-0555,2,1,8,0.9913717407581674
+Double weight: PSEAS,L2,"Canyon, Idaho",ITC-0568,1,2,9,0.9812036932752866
+Double weight: WSPF,L2,"Canyon, Idaho",ITC-0568,1,2,9,0.9236431559060594

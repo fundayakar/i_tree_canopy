@@ -1,0 +1,6 @@
+Rank,Region,Carbon_storage_t_C,Carbon_sequestration_t_C_yr,Pollutant_removal_kg_yr,Avoided_runoff_ML_yr,change_Carbon_sequestration_t_C_yr_pct,change_Pollutant_removal_kg_yr_pct,change_Avoided_runoff_ML_yr_pct
+1,Canyon,10422.69,257.69,10328.4,11.84,0.0,0.0,0.0
+2,Ada,10422.69,257.69,10093.16,16.58,0.0,-2.277603501026293,40.033783783783775
+3,Walla Walla,10422.69,366.19,12122.1,21.47,42.10485467034033,17.366678285116777,81.33445945945945
+4,Lincoln,10422.69,366.19,,,42.10485467034033,,
+5,Adams,10422.69,366.19,10986.49,10.2,42.10485467034033,6.371654854575737,-13.85135135135136

@@ -1,8 +1,9 @@
 numpy
 pandas
+scipy
+matplotlib
 geopandas
 pyogrio
 rasterio
 exactextract
 requests
-

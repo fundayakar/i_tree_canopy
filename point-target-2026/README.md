@@ -1,133 +1,100 @@
-# Lake Eymir i-Tree Canopy climate-proxy analysis
+# Point-target climate ranking, robustness and service comparison (1991–2020)
 
-This package documents the point-target rerun of the 1991–2020 climate
-similarity analysis. Lake Eymir is represented by all **20,255** coordinates
-generated in its i-Tree Canopy project, including five records without a
-land-cover label. Candidate configurations are represented by the **3,689**
-spatially resolved regional polygons. The ranking uses five climate descriptors,
-candidate-only z-scores, and Euclidean distance.
+This directory is the **current manuscript analysis** for Lake Eymir. The target climate is represented by all 20,255 original random i-Tree project locations, including five without a cover label. Land-cover percentages use only 20,250 classified records. The candidate universe contains 3,689 spatially resolved i-Tree Canopy regional configurations.
 
-This package concerns **climate-proxy selection**. The i-Tree Canopy ecosystem
-service estimates are outputs of the external i-Tree application and cannot be
-recreated by the climate Python script. Preserve the Canyon and Ada i-Tree
-reports separately alongside the manuscript's service table.
+## Data and method
 
-## Fast independent verification
+- **WorldClim source:** 1991–2020 monthly tmin, tmax and precipitation, downscaled CRU TS 4.09 with WorldClim 2.1 bias correction, 10 arc-minute resolution.
+- **Candidate regions:** fractional raster-cell-coverage-weighted polygon means; see the documented administrative crosswalk and geographic-source manifest in `candidate_universe/`.
+- **Eymir target:** calendar-month point-sample means from all 20,255 project coordinates; these approximate the area-average climatology over the i-Tree sampling frame.
+- **Descriptors:** MAT, MAP, TSEAS, PSEAS, WSPF (warmest consecutive three-month precipitation fraction, allowing the December–January boundary).
+- **Reference:** z scores computed from **candidate-only** means and population standard deviations; Lake Eymir is excluded from scaling-parameter estimation.
+- **Primary rank:** equal-weight standardized Euclidean distance.
 
-The archived CSVs in `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip`
-contain the 12-month climate values, computed features, ranking, and extraction
-QA. No GIS data or download is needed for this check:
+Archived baseline results:
+- Canyon County, Idaho: **0.422115**, rank 1.
+- Ada County, Idaho: **0.434221**, rank 2.
+- Eymir climate: MAT **11.057513 °C**, MAP **417.347276 mm**, TSEAS **23.478819 °C**, PSEAS **42.621166%**, WSPF **13.868744%**.
+- All 36 target monthly point extractions have 20,255 valid coordinates; no candidate is missing any of the five descriptors.
+
+## Verify the original climate analysis
+
+From repository root:
 
 ```bash
-python -m pip install numpy pandas
-python scripts/verify_results.py
+python -m pip install -r requirements.txt
+python point-target-2026/scripts/verify_results.py
 ```
 
-The verifier reconstructs all five descriptors from the monthly table,
-including the warmest consecutive three-month window across December–January;
-recalculates the means and population SDs from candidates alone; recomputes and
-checks every ranked distance; and checks target extraction counts. Expected
-first two results:
+The verifier reads `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` directly, reconstructs all five descriptors, checks candidate-only scaling and every distance/rank, and audits the point-to-raster extraction counts. No GIS or WorldClim download is necessary.
 
-| Rank | Candidate | Distance |
-| ---: | --- | ---: |
-| 1 | Canyon County, Idaho | 0.422115 |
-| 2 | Ada County, Idaho | 0.434221 |
+For **full extraction**, obtain a verified copy of `iTree_candidate_polygons_final.gpkg` and place it in `data/`. Then run:
 
-The Lake Eymir target values are MAT 11.057513 °C, MAP 417.347276 mm, TSEAS
-23.478819 °C, PSEAS 42.621166%, and WSPF 13.868744%. All 36 target monthly
-extractions used 20,255 valid coordinates. No candidate has a missing feature.
+```bash
+python point-target-2026/scripts/recompute_climate.py
+```
 
-## Full extraction from WorldClim
+The full script downloads historical monthly WorldClim archives, builds the 1991–2020 monthly climatologies, extracts candidates and target values, and writes intermediate QA tables. It uses GDAL, rasterio and exactextract and needs substantial disk space. The last full Colab run took place on 27 September 2026. The environment requirements are listed without falsely asserting that the original run's exact package versions were pinned.
 
-1. Download the **intact** [`iTree_candidate_polygons_final.gpkg`](https://doi.org/10.5281/zenodo.23044379)
-   (version DOI: `10.5281/zenodo.23044379`) and place it in this directory's
-   `data/`. It has 187,916,288 bytes and SHA-256
-   `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. See [`data/README.md`](data/README.md) for details.
-2. Use Python with GDAL support and install the dependencies:
+**GeoPackage availability:** the full 3,689-polygon input is not stored in GitHub. The corresponding author intends to supply it upon reasonable request after a verified original copy is recovered. Expected size **187,916,288 bytes**; SHA-256 `1399335ea6616cd8feb32b41d72cdac6a336bcaffbf883134912fcc28b819a26`. The earlier Zenodo DOI is not an active distribution link. See [data provenance](data/README.md).
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+## Ranking robustness (current manuscript Figure 1)
 
-3. From `point-target-2026/`, run:
+The analysis varies the similarity specification **without changing the input climate data or 3,689-candidate universe**:
+- Five separate leave-one-descriptor-out rankings.
+- Manhattan distance for the original five standardized descriptors.
+- Five variants in which one descriptor's squared-distance weight is doubled.
+- The baseline five-descriptor Euclidean model.
 
-   ```bash
-   python scripts/recompute_climate.py
-   ```
+```bash
+python point-target-2026/scripts/ranking_robustness.py
+python point-target-2026/scripts/plot_rank_stability.py
+```
 
-   For another geometry location, pass `--geometry /path/to/file.gpkg`.
-   `--points`, `--work-dir`, and `--out-dir` can also be supplied. Run
-   `python scripts/recompute_climate.py --help` for these paths.
+Outputs are:
+- `results/itree_ranking_robustness_summary.csv`: scenario winners, Canyon/Ada ranks and top-10 overlap.
+- `results/itree_ranking_robustness_top50.csv`: 50 closest candidates per scenario.
+- `figures/ranking_robustness.svg` (archived Figure 1); the plot script can also generate PNG.
 
-The script downloads the 12 WorldClim historical monthly ZIP archives for
-`tmin`, `tmax`, and `prec`, across the 1990–1999, 2000–2009, 2010–2019, and
-2020–2024 archive partitions. It uses **January 1991–December 2020** only,
-at **10 arc-minute** resolution, from CRU-TS 4.09 downscaled with WorldClim 2.1
-bias correction. Its source base URL is recorded in the code and the results ZIP's
-`worldclim_source_manifest.csv`. Expect a large download, global raster
-processing, and several gigabytes of temporary disk use. Cached downloads and
-monthly rasters go to `.work/`; fresh CSVs go to `run_output/` and a ZIP beside
-that directory. The program writes SHA-256 hashes of the two local inputs to
-`run_output/input_checksums.csv` and package versions to
-`run_output/environment.txt`.
+The ranking-robustness scenarios are sensitivity checks, not measures of statistical confidence or estimates of the most accurate ecosystem-service parameterization.
 
-The run was completed in Google Colab on 27 September 2026. The original
-session's exact package versions were not captured in the archived outputs;
-`requirements.txt` lists dependencies without pretending to pin that session.
-The `environment.txt` from a new run records the versions used in that run.
+## Ecosystem-service configuration comparison
 
-## File map
+The original Canyon and Ada i-Tree reports are archived in `../itreecnpy_project_files/`. Under unchanged Tree/Shrub cover, annual carbon sequestration is 257.69 t C/yr in both, air-pollutant removal changes from 10,328.40 to 10,093.16 kg/yr, and avoided runoff changes from 11.84 to 16.58 ML/yr.
 
-| Path | Description |
+The [five-proxy comparison](results/itree_top5_service_comparison.csv) additionally covers Walla Walla, Lincoln and Adams counties. Carbon storage stays at 10,422.69 t C throughout the five reports; annual sequestration is 366.19 t C/yr for the latter three. The Lincoln report lacks usable pollutant and hydrological component coefficients; its apparent zero values are treated as **N/A**.
+
+```bash
+python point-target-2026/scripts/verify_top5_services.py
+```
+
+The numeric check is reproducible from the archived CSV. To **reextract original five-PDF report values**, after the three pending source PDFs have been deposited or placed locally under `itreecnpy_project_files/` with names `WallaWalla.pdf`, `Lincoln.pdf` and `Adams.pdf`, install Poppler's `pdftotext` and run:
+
+```bash
+python point-target-2026/scripts/extract_top5_services.py
+```
+
+Until the missing PDFs are deposited, the CSV comparison is publicly inspectable but the three additional report transcriptions cannot be independently re-extracted from GitHub alone.
+
+## Files and provenance
+
+| Path | Purpose |
 | --- | --- |
-| `scripts/recompute_climate.py` | Full WorldClim extraction and ranking, with configurable paths. |
-| `scripts/verify_results.py` | Quick independent calculation from saved monthly CSVs. |
-| `scripts/recompute_carbon_comparison.py` | Recomputes per-hectare carbon values and the equivalent stem-volume increment from report outputs and published factors. |
-| `data/Eymir_iTree_project_points_20255.csv.gz` | Compressed CSV of all original i-Tree project locations; five unlabeled cover records retained. |
-| `data/iTree_candidate_polygons_final.gpkg` | Required for the full run; [archived separately on Zenodo](https://doi.org/10.5281/zenodo.23044379) because of its size. |
-| `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` | Eleven CSVs, including monthly values, raw features, reference scaling, full ranking, point extraction QA, raster-cell weights, and source manifest. |
+| `scripts/recompute_climate.py` | Original full WorldClim extraction and ranking |
+| `scripts/verify_results.py` | Independent archive reconstruction and QA |
+| `scripts/ranking_robustness.py` | Twelve ranking-sensitivity scenarios |
+| `scripts/plot_rank_stability.py` | Generate rank-stability Figure 1 |
+| `scripts/verify_top5_services.py` | Verify archived service comparison and percentages |
+| `scripts/extract_top5_services.py` | Optional check against all original PDFs |
+| `data/Eymir_iTree_project_points_20255.csv.gz` | All original project point coordinates and cover labels |
+| `candidate_universe/` | Eligibility registry, geometry crosswalk, sources and unresolved partitions |
+| `results/itree_climate_similarity_POINT_TARGET_1991_2020.zip` | Monthly climatologies, features, scaling, rankings, QA |
+| `results/itree_ranking_robustness_*.csv` | Ranking sensitivity results |
+| `results/itree_top5_service_comparison.csv` | Five-configuration service comparison |
+| `figures/ranking_robustness.svg` | Current manuscript figure |
 
-The results ZIP is the unchanged output of the completed Colab run. Extract it
-to inspect individual CSVs. The fast verifier reads the ZIP directly.
+The previous `scripts/recompute_carbon_comparison.py` is retained for **historical provenance only**; its carbon plausibility exercise is outside the scope of the current manuscript. The same applies to the separate EO comparison archive.
 
-## Carbon comparison calculation
+## Interpretation
 
-`scripts/recompute_carbon_comparison.py` reproduces the manuscript's per-hectare
-Tree/Shrub carbon values and approximate equivalent stem-volume increment:
-
-```bash
-python scripts/recompute_carbon_comparison.py
-```
-
-It uses the Canyon i-Tree report's rounded annual sequestration total
-(257.69 t C yr⁻¹) and Tree/Shrub area coefficient (190.000 t C km⁻² yr⁻¹)
-to infer approximately 135.6 ha of Tree/Shrub cover. It then divides the
-reported carbon totals by this area. The equivalent volume calculation divides
-1.90 t C ha⁻¹ yr⁻¹ by the product of wood density (0.408 t m⁻³), aboveground
-biomass expansion (1.516), root-to-shoot adjustment (1 + 0.179), and carbon
-fraction (0.5386), yielding approximately 4.84 m³ ha⁻¹ yr⁻¹. The published
-conversion factors are from Güner and Çömez (2017). The inferred area is
-derived from the report's rounded numbers, not an independent GIS measurement;
-this calculation is a contextual comparison, not a new field estimate.
-
-## Interpretation boundary
-
-The 20,255 project points approximate the area-average climate of the i-Tree
-project's spatial sampling frame. The 20,250 labeled points are used for
-land-cover proportions. The climate metric identifies the closest available
-configuration among this candidate universe under these five equally weighted
-standardized descriptors; it does not establish ecological equivalence or
-validate the i-Tree service coefficients. The Canyon–Ada output comparison is
-local sensitivity to the nearest ranked alternative, not a complete range of
-configuration uncertainty.
-
-## Candidate provenance and service reports
-
-The [`candidate_universe/`](candidate_universe/) directory archives the eligible
-configuration registry, geometry crosswalk, source manifest, QA, and the 18
-unresolved candidates excluded from the spatial analysis. The original
-[Canyon](../itreecnpy_project_files/canyon.pdf) and
-[Ada](../itreecnpy_project_files/Ada.pdf) i-Tree reports are also archived.
-The climate verifier reconstructs the ranking; i-Tree's server-side service
-coefficients are documented in those reports.
+This analysis documents the ranking and the service-output sensitivity under explicitly stated configurations. An analogue rank does not alone validate transferred ecological coefficients. The extended five-proxy comparison is informative but is not a full uncertainty distribution over all i-Tree configurations.

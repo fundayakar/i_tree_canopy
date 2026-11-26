@@ -1,8 +1,10 @@
 # Earth-observation contextual comparison
 
-This directory contains the Google Earth Engine (GEE) workflow and point exports
-for the Lake Eymir manuscript's descriptive comparison with Sentinel-2 NDVI,
-ESA WorldCover and Dynamic World.
+This directory preserves a **historical exploratory Earth-observation comparison**
+conducted during an earlier Lake Eymir manuscript revision. It is **not part of
+the current climate-proxy ranking and ecosystem-service sensitivity manuscript**.
+The original Google Earth Engine (GEE) workflow and point exports for Sentinel-2
+NDVI, ESA WorldCover and Dynamic World remain available for provenance.
 
 ## Files
 
@@ -63,7 +65,7 @@ categorical summary. Valid and missing counts are reported separately for
 each product, and i-Tree cover is recalculated on that product's valid subset.
 All three archived point exports contain all 20,250 classified locations.
 
-## Verified manuscript values
+## Archived exploratory values
 
 | Quantity | Value |
 | --- | ---: |
